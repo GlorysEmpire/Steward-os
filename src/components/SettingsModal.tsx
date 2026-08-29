@@ -88,7 +88,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
         <div className="flex items-start justify-between gap-4 border-b border-[#262626] pb-4">
           <div className="space-y-1">
             <div className="flex items-center gap-2">
-              <span className="p-1 bg-[#161616] text-[#C5A059] border border-[#262626]">
+              <span className="p-1 bg-[#161616] text-[#5FBF8C] border border-[#262626]">
                 <Settings className="w-3.5 h-3.5" />
               </span>
               <span className="text-[10px] uppercase font-mono tracking-widest text-[#808080]">
@@ -115,7 +115,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               type="text"
               value={userName}
               onChange={(e) => setUserName(e.target.value)}
-              className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059]"
+              className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C]"
             />
           </div>
 
@@ -127,7 +127,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               rows={2}
               value={funeralSummary}
               onChange={(e) => setFuneralSummary(e.target.value)}
-              className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059] font-serif italic"
+              className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C] font-serif italic"
             />
           </div>
 
@@ -138,7 +138,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                 type="time"
                 value={gratitudeScanTime}
                 onChange={(e) => setGratitudeScanTime(e.target.value)}
-                className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059] font-mono"
+                className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C] font-mono"
               />
             </div>
             <div>
@@ -147,7 +147,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                 type="time"
                 value={eveningProtocolTime}
                 onChange={(e) => setEveningProtocolTime(e.target.value)}
-                className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059] font-mono"
+                className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C] font-mono"
               />
             </div>
           </div>
@@ -158,10 +158,10 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               id="sound-checkbox"
               checked={soundEnabled}
               onChange={(e) => setSoundEnabled(e.target.checked)}
-              className="accent-[#C5A059] bg-[#0A0A0A] border-[#262626]"
+              className="accent-[#5FBF8C] bg-[#0A0A0A] border-[#262626]"
             />
             <label htmlFor="sound-checkbox" className="text-xs text-[#808080] cursor-pointer flex items-center gap-1.5 font-serif">
-              <Volume2 className="w-3.5 h-3.5 text-[#C5A059]" />
+              <Volume2 className="w-3.5 h-3.5 text-[#5FBF8C]" />
               Enable Monastic Bell & Audio Synthesis Feedback
             </label>
           </div>
@@ -176,7 +176,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             </button>
             <button
               type="submit"
-              className="px-5 py-2 bg-[#C5A059] hover:bg-[#D6B570] text-black text-xs uppercase tracking-widest font-semibold"
+              className="px-5 py-2 bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black text-xs uppercase tracking-widest font-semibold"
             >
               Save Preferences
             </button>
@@ -195,12 +195,12 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               onClick={handleExport}
               className="px-3.5 py-1.5 bg-[#161616] hover:bg-[#222222] text-[#E0E0E0] text-[10px] uppercase tracking-widest font-semibold flex items-center gap-1.5 border border-[#262626]"
             >
-              <Download className="w-3.5 h-3.5 text-[#C5A059]" />
+              <Download className="w-3.5 h-3.5 text-[#5FBF8C]" />
               <span>Export JSON State</span>
             </button>
 
             <label className="px-3.5 py-1.5 bg-[#161616] hover:bg-[#222222] text-[#E0E0E0] text-[10px] uppercase tracking-widest font-semibold flex items-center gap-1.5 border border-[#262626] cursor-pointer">
-              <Upload className="w-3.5 h-3.5 text-[#C5A059]" />
+              <Upload className="w-3.5 h-3.5 text-[#5FBF8C]" />
               <span>Restore Backup</span>
               <input
                 type="file"

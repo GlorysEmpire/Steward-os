@@ -30,7 +30,7 @@ export default function SignupPage() {
     return (
       <div className="min-h-screen flex items-center justify-center bg-[#0A0A0A] px-4 text-center">
         <div>
-          <h1 className="font-serif-heading text-xl text-[#C5A059] mb-3">Check your email</h1>
+          <h1 className="font-serif-heading text-xl text-[#5FBF8C] mb-3">Check your email</h1>
           <p className="max-w-xs text-sm text-[#808080]">
             We sent a confirmation link to {email}. Follow it to activate your account.
           </p>
@@ -43,7 +43,7 @@ export default function SignupPage() {
     <div className="min-h-screen flex items-center justify-center bg-[#0A0A0A] px-4">
       <div className="w-full max-w-sm">
         <div className="mb-10 text-center">
-          <h1 className="font-serif-heading text-2xl text-[#C5A059] tracking-wide">STEWARDOS</h1>
+          <h1 className="font-serif-heading text-2xl text-[#5FBF8C] tracking-wide">STEWARDOS</h1>
           <p className="mt-2 text-xs text-[#808080] font-mono uppercase tracking-widest">
             Begin the operating system
           </p>
@@ -60,7 +60,7 @@ export default function SignupPage() {
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full rounded bg-[#111] border border-[#262626] px-3 py-2.5 text-sm text-[#E0E0E0] focus:outline-none focus:border-[#C5A059]"
+              className="w-full rounded bg-[#111] border border-[#262626] px-3 py-2.5 text-sm text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C]"
             />
           </div>
           <div>
@@ -74,7 +74,7 @@ export default function SignupPage() {
               minLength={6}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full rounded bg-[#111] border border-[#262626] px-3 py-2.5 text-sm text-[#E0E0E0] focus:outline-none focus:border-[#C5A059]"
+              className="w-full rounded bg-[#111] border border-[#262626] px-3 py-2.5 text-sm text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C]"
             />
           </div>
 
@@ -83,7 +83,7 @@ export default function SignupPage() {
           <button
             type="submit"
             disabled={submitting}
-            className="mt-2 w-full rounded bg-[#C5A059] py-2.5 text-sm font-medium text-black hover:bg-[#d4b06e] disabled:opacity-50 transition-colors"
+            className="mt-2 w-full rounded bg-[#5FBF8C] py-2.5 text-sm font-medium text-black hover:bg-[#7FD1A6] disabled:opacity-50 transition-colors"
           >
             {submitting ? 'Creating account…' : 'Sign up'}
           </button>
@@ -91,7 +91,7 @@ export default function SignupPage() {
 
         <p className="mt-6 text-center text-sm text-[#808080]">
           Already have an account?{' '}
-          <Link href="/login" className="text-[#C5A059] underline">
+          <Link href="/login" className="text-[#5FBF8C] underline">
             Sign in
           </Link>
         </p>

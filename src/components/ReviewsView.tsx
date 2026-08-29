@@ -35,7 +35,7 @@ export const ReviewsView: React.FC<ReviewsViewProps> = ({
       <div className="bg-[#111111] border border-[#262626] p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div>
           <div className="flex items-center gap-2">
-            <span className="text-[10px] uppercase font-mono tracking-widest px-2 py-0.5 bg-[#161616] text-[#C5A059] border border-[#262626]">
+            <span className="text-[10px] uppercase font-mono tracking-widest px-2 py-0.5 bg-[#161616] text-[#5FBF8C] border border-[#262626]">
               Review Protocols
             </span>
           </div>
@@ -51,7 +51,7 @@ export const ReviewsView: React.FC<ReviewsViewProps> = ({
           <button
             id="start-sunday-review-btn"
             onClick={onOpenWeeklyWizard}
-            className="px-5 py-2.5 bg-[#C5A059] hover:bg-[#D6B570] text-black text-xs font-semibold uppercase tracking-widest flex items-center gap-2 transition-all shadow-sm"
+            className="px-5 py-2.5 bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black text-xs font-semibold uppercase tracking-widest flex items-center gap-2 transition-all shadow-sm"
           >
             <Calendar className="w-4 h-4" />
             <span>Run Sunday Audit</span>
@@ -65,7 +65,7 @@ export const ReviewsView: React.FC<ReviewsViewProps> = ({
           onClick={() => setActiveTab('weekly')}
           className={`px-4 py-2 text-xs uppercase tracking-widest transition-all font-medium ${
             activeTab === 'weekly'
-              ? 'bg-[#161616] text-[#C5A059] border border-[#262626]'
+              ? 'bg-[#161616] text-[#5FBF8C] border border-[#262626]'
               : 'text-[#808080] hover:text-[#E0E0E0]'
           }`}
         >
@@ -76,7 +76,7 @@ export const ReviewsView: React.FC<ReviewsViewProps> = ({
           onClick={() => setActiveTab('daily')}
           className={`px-4 py-2 text-xs uppercase tracking-widest transition-all font-medium ${
             activeTab === 'daily'
-              ? 'bg-[#161616] text-[#C5A059] border border-[#262626]'
+              ? 'bg-[#161616] text-[#5FBF8C] border border-[#262626]'
               : 'text-[#808080] hover:text-[#E0E0E0]'
           }`}
         >
@@ -92,7 +92,7 @@ export const ReviewsView: React.FC<ReviewsViewProps> = ({
               <p className="text-xs text-[#808080]">No weekly audits recorded yet.</p>
               <button
                 onClick={onOpenWeeklyWizard}
-                className="px-5 py-2.5 bg-[#C5A059] hover:bg-[#D6B570] text-black text-xs uppercase tracking-widest font-semibold"
+                className="px-5 py-2.5 bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black text-xs uppercase tracking-widest font-semibold"
               >
                 Launch First Sunday Audit
               </button>
@@ -105,7 +105,7 @@ export const ReviewsView: React.FC<ReviewsViewProps> = ({
               >
                 <div className="flex items-center justify-between border-b border-[#262626] pb-3">
                   <div>
-                    <span className="text-[10px] font-mono tracking-widest uppercase text-[#C5A059]">
+                    <span className="text-[10px] font-mono tracking-widest uppercase text-[#5FBF8C]">
                       Week {rev.weekNumber || 34}, {rev.year || 2026}
                     </span>
                     <h3 className="text-lg font-serif text-[#E0E0E0]">
@@ -118,9 +118,9 @@ export const ReviewsView: React.FC<ReviewsViewProps> = ({
                 </div>
 
                 {/* The Single Adjustment Callout */}
-                <div className="p-4 bg-[#161616] border border-[#C5A059]/40 space-y-1">
-                  <div className="flex items-center gap-1.5 text-[10px] font-semibold text-[#C5A059] uppercase tracking-widest">
-                    <ShieldCheck className="w-3.5 h-3.5 text-[#C5A059]" />
+                <div className="p-4 bg-[#161616] border border-[#5FBF8C]/40 space-y-1">
+                  <div className="flex items-center gap-1.5 text-[10px] font-semibold text-[#5FBF8C] uppercase tracking-widest">
+                    <ShieldCheck className="w-3.5 h-3.5 text-[#5FBF8C]" />
                     <span>The Single Adjustment:</span>
                   </div>
                   <p className="text-sm font-serif text-[#E0E0E0]">
@@ -138,7 +138,7 @@ export const ReviewsView: React.FC<ReviewsViewProps> = ({
                       >
                         <div className="font-serif text-[#E0E0E0]">{ra.roleName}</div>
                         <div className="text-[#808080] text-[11px]">
-                          Delivered: <span className="text-[#C5A059] font-mono font-bold">{ra.deliveredOutputUnits}</span> / {ra.targetOutputUnits} units
+                          Delivered: <span className="text-[#5FBF8C] font-mono font-bold">{ra.deliveredOutputUnits}</span> / {ra.targetOutputUnits} units
                         </div>
                       </div>
                     ))}
@@ -154,7 +154,7 @@ export const ReviewsView: React.FC<ReviewsViewProps> = ({
                   </div>
 
                   {rev.aiDiagnosisNote && (
-                    <div className="flex-1 bg-[#161616] p-3 border border-[#262626] text-[#C5A059] text-[11px] italic leading-relaxed">
+                    <div className="flex-1 bg-[#161616] p-3 border border-[#262626] text-[#5FBF8C] text-[11px] italic leading-relaxed">
                       <strong className="text-white not-italic block mb-1">AI Monastic Steward:</strong> {rev.aiDiagnosisNote}
                     </div>
                   )}
@@ -173,7 +173,7 @@ export const ReviewsView: React.FC<ReviewsViewProps> = ({
               <p className="text-xs text-[#808080]">No evening journals logged yet.</p>
               <button
                 onClick={onOpenDailyJournal}
-                className="px-5 py-2.5 bg-[#C5A059] hover:bg-[#D6B570] text-black text-xs uppercase tracking-widest font-semibold"
+                className="px-5 py-2.5 bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black text-xs uppercase tracking-widest font-semibold"
               >
                 Log Today&apos;s 20:20 Journal
               </button>
@@ -186,13 +186,13 @@ export const ReviewsView: React.FC<ReviewsViewProps> = ({
               >
                 <div className="flex items-center justify-between border-b border-[#262626] pb-3">
                   <div className="flex items-center gap-3">
-                    <span className="text-xs font-mono font-bold text-[#C5A059]">{j.date}</span>
+                    <span className="text-xs font-mono font-bold text-[#5FBF8C]">{j.date}</span>
                     <span
                       className={`text-[9px] uppercase tracking-widest px-2 py-0.5 border ${
                         j.keptWordStatus === 'yes'
                           ? 'bg-[#161616] text-[#6BBF8E] border-[#6BBF8E]/40'
                           : j.keptWordStatus === 'partial'
-                          ? 'bg-[#161616] text-[#C5A059] border-[#C5A059]/40'
+                          ? 'bg-[#161616] text-[#5FBF8C] border-[#5FBF8C]/40'
                           : 'bg-[#161616] text-[#E06C75] border-[#E06C75]/40'
                       }`}
                     >

@@ -32,7 +32,7 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-[#0A0A0A] px-4">
       <div className="w-full max-w-sm">
         <div className="mb-10 text-center">
-          <h1 className="font-serif-heading text-2xl text-[#C5A059] tracking-wide">STEWARDOS</h1>
+          <h1 className="font-serif-heading text-2xl text-[#5FBF8C] tracking-wide">STEWARDOS</h1>
           <p className="mt-2 text-xs text-[#808080] font-mono uppercase tracking-widest">
             Consistency · Truth · Execution
           </p>
@@ -49,7 +49,7 @@ export default function LoginPage() {
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full rounded bg-[#111] border border-[#262626] px-3 py-2.5 text-sm text-[#E0E0E0] focus:outline-none focus:border-[#C5A059]"
+              className="w-full rounded bg-[#111] border border-[#262626] px-3 py-2.5 text-sm text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C]"
             />
           </div>
           <div>
@@ -62,7 +62,7 @@ export default function LoginPage() {
               required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full rounded bg-[#111] border border-[#262626] px-3 py-2.5 text-sm text-[#E0E0E0] focus:outline-none focus:border-[#C5A059]"
+              className="w-full rounded bg-[#111] border border-[#262626] px-3 py-2.5 text-sm text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C]"
             />
           </div>
 
@@ -71,7 +71,7 @@ export default function LoginPage() {
           <button
             type="submit"
             disabled={submitting}
-            className="mt-2 w-full rounded bg-[#C5A059] py-2.5 text-sm font-medium text-black hover:bg-[#d4b06e] disabled:opacity-50 transition-colors"
+            className="mt-2 w-full rounded bg-[#5FBF8C] py-2.5 text-sm font-medium text-black hover:bg-[#7FD1A6] disabled:opacity-50 transition-colors"
           >
             {submitting ? 'Signing in…' : 'Sign in'}
           </button>
@@ -79,7 +79,7 @@ export default function LoginPage() {
 
         <p className="mt-6 text-center text-sm text-[#808080]">
           No account?{' '}
-          <Link href="/signup" className="text-[#C5A059] underline">
+          <Link href="/signup" className="text-[#5FBF8C] underline">
             Sign up
           </Link>
         </p>

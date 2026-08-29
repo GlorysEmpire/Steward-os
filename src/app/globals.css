@@ -8,7 +8,7 @@
   }
 
   .font-serif-heading {
-    font-family: 'Cinzel', 'Newsreader', Georgia, serif;
+    font-family: 'Fraunces', 'Newsreader', Georgia, serif;
     letter-spacing: 0.03em;
   }
 
@@ -34,7 +34,7 @@
   border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #C5A059;
+  background: #5FBF8C;
 }
 
 @media (prefers-reduced-motion: reduce) {

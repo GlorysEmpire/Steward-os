@@ -18,11 +18,11 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400;1,6..72,600&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400;1,6..72,600&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body className="bg-[#0A0A0A] text-[#E0E0E0] antialiased selection:bg-[#C5A059] selection:text-black">
+      <body className="bg-[#0A0A0A] text-[#E0E0E0] antialiased selection:bg-[#5FBF8C] selection:text-black">
         <AuthProvider>{children}</AuthProvider>
       </body>
     </html>

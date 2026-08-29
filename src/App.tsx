@@ -420,7 +420,7 @@ export default function App() {
   if (stateLoading) {
     return (
       <div className="min-h-screen bg-[#0A0A0A] text-[#E0E0E0] flex items-center justify-center font-sans">
-        <p className="font-serif-heading tracking-wide text-[#C5A059] text-sm uppercase">
+        <p className="font-serif-heading tracking-wide text-[#5FBF8C] text-sm uppercase">
           Loading your steward…
         </p>
       </div>
@@ -428,7 +428,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-[#0A0A0A] text-[#E0E0E0] flex flex-col font-sans selection:bg-[#C5A059] selection:text-black">
+    <div className="min-h-screen bg-[#0A0A0A] text-[#E0E0E0] flex flex-col font-sans selection:bg-[#5FBF8C] selection:text-black">
       
       {/* Top Main Navigation */}
       <Navigation
@@ -519,7 +519,7 @@ export default function App() {
       {/* Footer Banner */}
       <footer className="border-t border-[#262626] bg-[#0A0A0A] py-3.5 px-6 text-center text-[10px] uppercase tracking-[0.25em] text-[#808080]">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-2 max-w-7xl mx-auto">
-          <span>Truth is fixed. Strategy is fluid. • <span className="text-[#C5A059]">StewardOS</span></span>
+          <span>Truth is fixed. Strategy is fluid. • <span className="text-[#5FBF8C]">StewardOS</span></span>
           <span className="text-[#555]">Never-Zero Baseline Integrity Engine // v1.0</span>
         </div>
       </footer>

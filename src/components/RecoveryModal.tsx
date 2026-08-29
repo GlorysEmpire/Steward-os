@@ -71,10 +71,10 @@ export const RecoveryModal: React.FC<RecoveryModalProps> = ({
         <div className="flex items-start justify-between gap-4 border-b border-[#262626] pb-4">
           <div className="space-y-1">
             <div className="flex items-center gap-2">
-              <span className="p-1 bg-[#161616] text-[#C5A059] border border-[#262626]">
+              <span className="p-1 bg-[#161616] text-[#5FBF8C] border border-[#262626]">
                 <Zap className="w-3.5 h-3.5" />
               </span>
-              <span className="text-[10px] uppercase font-mono tracking-widest text-[#C5A059]">
+              <span className="text-[10px] uppercase font-mono tracking-widest text-[#5FBF8C]">
                 Zero-Debt Protocol
               </span>
             </div>
@@ -95,7 +95,7 @@ export const RecoveryModal: React.FC<RecoveryModalProps> = ({
         </div>
 
         {/* Axiom Callout */}
-        <div className="p-3.5 bg-[#161616] border border-[#262626] text-xs text-[#C5A059] font-serif italic leading-relaxed">
+        <div className="p-3.5 bg-[#161616] border border-[#262626] text-xs text-[#5FBF8C] font-serif italic leading-relaxed">
           <strong>Steward Principle:</strong> Inconsistency is not a moral verdict. Do not double tomorrow&apos;s workload. Fulfill an immediate micro-baseline right now.
         </div>
 
@@ -107,7 +107,7 @@ export const RecoveryModal: React.FC<RecoveryModalProps> = ({
               type="text"
               value={missedAction}
               onChange={(e) => setMissedAction(e.target.value)}
-              className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059] placeholder-[#555]"
+              className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C] placeholder-[#555]"
               placeholder="e.g. Missed 90 min deep work block"
             />
           </div>
@@ -119,7 +119,7 @@ export const RecoveryModal: React.FC<RecoveryModalProps> = ({
               disabled={isLoading || !missedAction.trim()}
               className="px-4 py-1.5 bg-[#161616] hover:bg-[#222222] text-[#E0E0E0] border border-[#262626] text-[10px] uppercase tracking-widest font-semibold flex items-center gap-1.5"
             >
-              {isLoading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Bot className="w-3.5 h-3.5 text-[#C5A059]" />}
+              {isLoading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Bot className="w-3.5 h-3.5 text-[#5FBF8C]" />}
               <span>Generate Micro-Actions</span>
             </button>
           </div>
@@ -127,7 +127,7 @@ export const RecoveryModal: React.FC<RecoveryModalProps> = ({
 
         {/* Recalibration Quote */}
         {recalibrationQuote && (
-          <div className="p-3 bg-[#0A0A0A] border border-[#262626] text-xs text-[#C5A059] font-serif italic">
+          <div className="p-3 bg-[#0A0A0A] border border-[#262626] text-xs text-[#5FBF8C] font-serif italic">
             &ldquo;{recalibrationQuote}&rdquo;
           </div>
         )}
@@ -143,14 +143,14 @@ export const RecoveryModal: React.FC<RecoveryModalProps> = ({
               <button
                 key={idx}
                 onClick={() => handleSelectAction(`${act.title} (${act.outputUnit})`)}
-                className="w-full p-4 bg-[#0A0A0A] hover:bg-[#161616] border border-[#262626] hover:border-[#C5A059]/50 text-left transition-all flex items-start justify-between gap-3 group"
+                className="w-full p-4 bg-[#0A0A0A] hover:bg-[#161616] border border-[#262626] hover:border-[#5FBF8C]/50 text-left transition-all flex items-start justify-between gap-3 group"
               >
                 <div className="space-y-1">
                   <div className="flex items-center gap-2">
-                    <span className="text-[9px] font-mono uppercase px-1.5 py-0.5 bg-[#161616] text-[#C5A059] border border-[#262626]">
+                    <span className="text-[9px] font-mono uppercase px-1.5 py-0.5 bg-[#161616] text-[#5FBF8C] border border-[#262626]">
                       {act.duration}
                     </span>
-                    <span className="text-xs font-serif text-[#E0E0E0] group-hover:text-[#C5A059]">
+                    <span className="text-xs font-serif text-[#E0E0E0] group-hover:text-[#5FBF8C]">
                       {act.title}
                     </span>
                   </div>
@@ -159,7 +159,7 @@ export const RecoveryModal: React.FC<RecoveryModalProps> = ({
                     Output: <span className="text-[#E0E0E0]">{act.outputUnit}</span>
                   </div>
                 </div>
-                <ArrowRight className="w-4 h-4 text-[#808080] group-hover:text-[#C5A059] mt-1 flex-shrink-0" />
+                <ArrowRight className="w-4 h-4 text-[#808080] group-hover:text-[#5FBF8C] mt-1 flex-shrink-0" />
               </button>
             ))
           ) : (
@@ -168,14 +168,14 @@ export const RecoveryModal: React.FC<RecoveryModalProps> = ({
               <button
                 id="default-recovery-mva-btn"
                 onClick={() => handleSelectAction('2-Minute Minimum Viable Action (1 sentence or 5 pushups)')}
-                className="w-full p-4 bg-[#0A0A0A] hover:bg-[#161616] border border-[#262626] hover:border-[#C5A059]/50 text-left transition-all flex items-start justify-between gap-3 group"
+                className="w-full p-4 bg-[#0A0A0A] hover:bg-[#161616] border border-[#262626] hover:border-[#5FBF8C]/50 text-left transition-all flex items-start justify-between gap-3 group"
               >
                 <div className="space-y-1">
                   <div className="flex items-center gap-2">
-                    <span className="text-[9px] font-mono uppercase px-1.5 py-0.5 bg-[#161616] text-[#C5A059] border border-[#262626] font-bold">
+                    <span className="text-[9px] font-mono uppercase px-1.5 py-0.5 bg-[#161616] text-[#5FBF8C] border border-[#262626] font-bold">
                       2 MIN
                     </span>
-                    <span className="text-xs font-serif text-[#E0E0E0] group-hover:text-[#C5A059]">
+                    <span className="text-xs font-serif text-[#E0E0E0] group-hover:text-[#5FBF8C]">
                       Minimum Viable Action (MVA)
                     </span>
                   </div>
@@ -183,21 +183,21 @@ export const RecoveryModal: React.FC<RecoveryModalProps> = ({
                     Open the single document, write 1 clean line or do 5 slow deep breaths with physical movement.
                   </p>
                 </div>
-                <ArrowRight className="w-4 h-4 text-[#808080] group-hover:text-[#C5A059] mt-1 flex-shrink-0" />
+                <ArrowRight className="w-4 h-4 text-[#808080] group-hover:text-[#5FBF8C] mt-1 flex-shrink-0" />
               </button>
 
               {/* Default Option 2: 10-Minute Single Output Sprint */}
               <button
                 id="default-recovery-10m-btn"
                 onClick={() => handleSelectAction('10-Minute Unbroken Sprint (1 physical output unit delivered)')}
-                className="w-full p-4 bg-[#0A0A0A] hover:bg-[#161616] border border-[#262626] hover:border-[#C5A059]/50 text-left transition-all flex items-start justify-between gap-3 group"
+                className="w-full p-4 bg-[#0A0A0A] hover:bg-[#161616] border border-[#262626] hover:border-[#5FBF8C]/50 text-left transition-all flex items-start justify-between gap-3 group"
               >
                 <div className="space-y-1">
                   <div className="flex items-center gap-2">
                     <span className="text-[9px] font-mono uppercase px-1.5 py-0.5 bg-[#161616] text-[#6BBF8E] border border-[#262626] font-bold">
                       10 MIN
                     </span>
-                    <span className="text-xs font-serif text-[#E0E0E0] group-hover:text-[#C5A059]">
+                    <span className="text-xs font-serif text-[#E0E0E0] group-hover:text-[#5FBF8C]">
                       Single-Task Micro-Sprint
                     </span>
                   </div>
@@ -205,7 +205,7 @@ export const RecoveryModal: React.FC<RecoveryModalProps> = ({
                     Timer running, zero tabs, produce 1 tangible unit (1 function, 1 paragraph, 1 quick log).
                   </p>
                 </div>
-                <ArrowRight className="w-4 h-4 text-[#808080] group-hover:text-[#C5A059] mt-1 flex-shrink-0" />
+                <ArrowRight className="w-4 h-4 text-[#808080] group-hover:text-[#5FBF8C] mt-1 flex-shrink-0" />
               </button>
             </>
           )}
@@ -218,14 +218,14 @@ export const RecoveryModal: React.FC<RecoveryModalProps> = ({
             placeholder="Or write custom micro-recovery action..."
             value={customAction}
             onChange={(e) => setCustomAction(e.target.value)}
-            className="flex-1 px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] placeholder-[#555] focus:outline-none focus:border-[#C5A059]"
+            className="flex-1 px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] placeholder-[#555] focus:outline-none focus:border-[#5FBF8C]"
           />
           <button
             onClick={() => {
               if (customAction.trim()) handleSelectAction(customAction.trim());
             }}
             disabled={!customAction.trim()}
-            className="px-5 py-2 bg-[#C5A059] hover:bg-[#D6B570] disabled:opacity-40 text-black text-xs uppercase tracking-widest font-semibold"
+            className="px-5 py-2 bg-[#5FBF8C] hover:bg-[#7FD1A6] disabled:opacity-40 text-black text-xs uppercase tracking-widest font-semibold"
           >
             Execute
           </button>

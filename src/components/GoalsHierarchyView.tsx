@@ -61,7 +61,7 @@ export const GoalsHierarchyView: React.FC<GoalsHierarchyViewProps> = ({
       <div className="bg-[#111111] border border-[#262626] p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div>
           <div className="flex items-center gap-2">
-            <span className="text-[10px] uppercase font-mono tracking-widest px-2 py-0.5 bg-[#161616] text-[#C5A059] border border-[#262626]">
+            <span className="text-[10px] uppercase font-mono tracking-widest px-2 py-0.5 bg-[#161616] text-[#5FBF8C] border border-[#262626]">
               Multi-Tier Alignment
             </span>
           </div>
@@ -76,7 +76,7 @@ export const GoalsHierarchyView: React.FC<GoalsHierarchyViewProps> = ({
         <button
           id="add-monthly-role-btn"
           onClick={() => setShowAddRoleModal(true)}
-          className="px-5 py-2.5 bg-[#C5A059] hover:bg-[#D6B570] text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-2 shadow-sm flex-shrink-0"
+          className="px-5 py-2.5 bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-2 shadow-sm flex-shrink-0"
         >
           <Plus className="w-4 h-4" />
           <span>Add Monthly Role</span>
@@ -86,7 +86,7 @@ export const GoalsHierarchyView: React.FC<GoalsHierarchyViewProps> = ({
       {/* TIER 3 (Most immediate): Monthly Roles & Goals */}
       <div className="space-y-4">
         <div className="flex items-center gap-2 border-b border-[#262626] pb-2">
-          <Compass className="w-4 h-4 text-[#C5A059]" />
+          <Compass className="w-4 h-4 text-[#5FBF8C]" />
           <h2 className="text-sm uppercase tracking-widest font-serif text-[#E0E0E0]">
             Current Month: Roles, Baselines & Output Counts
           </h2>
@@ -103,7 +103,7 @@ export const GoalsHierarchyView: React.FC<GoalsHierarchyViewProps> = ({
               >
                 <div className="flex items-start justify-between gap-3">
                   <div>
-                    <span className="text-[9px] uppercase font-mono px-2 py-0.5 bg-[#161616] text-[#C5A059] border border-[#262626]">
+                    <span className="text-[9px] uppercase font-mono px-2 py-0.5 bg-[#161616] text-[#5FBF8C] border border-[#262626]">
                       Active Role
                     </span>
                     <h3 className="text-base font-serif text-[#E0E0E0] mt-2">
@@ -120,13 +120,13 @@ export const GoalsHierarchyView: React.FC<GoalsHierarchyViewProps> = ({
                     >
                       -
                     </button>
-                    <span className="font-mono text-xs font-bold text-[#C5A059] px-1">
+                    <span className="font-mono text-xs font-bold text-[#5FBF8C] px-1">
                       {role.currentOutputCount} / {role.targetOutputCount}
                     </span>
                     <button
                       id={`inc-role-${role.id}`}
                       onClick={() => onIncrementRoleOutput(role.id, 1)}
-                      className="text-xs text-[#C5A059] hover:text-[#D6B570] px-1 font-mono font-bold"
+                      className="text-xs text-[#5FBF8C] hover:text-[#7FD1A6] px-1 font-mono font-bold"
                     >
                       +
                     </button>
@@ -139,7 +139,7 @@ export const GoalsHierarchyView: React.FC<GoalsHierarchyViewProps> = ({
 
                 {/* Non-Negotiable Baseline */}
                 <div className="p-3 bg-[#161616] border border-[#262626] text-xs text-[#E0E0E0] space-y-1">
-                  <div className="flex items-center gap-1.5 text-[10px] text-[#C5A059] uppercase tracking-wider font-mono">
+                  <div className="flex items-center gap-1.5 text-[10px] text-[#5FBF8C] uppercase tracking-wider font-mono">
                     <ShieldAlert className="w-3.5 h-3.5" />
                     <span>Non-Negotiable Baseline</span>
                   </div>
@@ -154,7 +154,7 @@ export const GoalsHierarchyView: React.FC<GoalsHierarchyViewProps> = ({
                   </div>
                   <div className="w-full h-1 bg-[#262626] overflow-hidden">
                     <div
-                      className="h-full bg-[#C5A059] transition-all"
+                      className="h-full bg-[#5FBF8C] transition-all"
                       style={{ width: `${pct}%` }}
                     />
                   </div>
@@ -182,7 +182,7 @@ export const GoalsHierarchyView: React.FC<GoalsHierarchyViewProps> = ({
             >
               <div className="flex items-center justify-between text-xs text-[#808080] font-mono">
                 <span className="text-[10px] uppercase">Target: {goal.targetDate}</span>
-                <span className="text-[#C5A059] font-bold">{goal.progress}%</span>
+                <span className="text-[#5FBF8C] font-bold">{goal.progress}%</span>
               </div>
               <h3 className="text-sm font-serif text-[#E0E0E0] leading-snug">
                 {goal.title}
@@ -204,7 +204,7 @@ export const GoalsHierarchyView: React.FC<GoalsHierarchyViewProps> = ({
       {/* TIER 1: 5-Year Anchor Vision */}
       <div className="space-y-4">
         <div className="flex items-center gap-2 border-b border-[#262626] pb-2">
-          <Award className="w-4 h-4 text-[#C5A059]" />
+          <Award className="w-4 h-4 text-[#5FBF8C]" />
           <h2 className="text-sm uppercase tracking-widest font-serif text-[#E0E0E0]">
             5-Year Inviolable Anchor Vision
           </h2>
@@ -217,7 +217,7 @@ export const GoalsHierarchyView: React.FC<GoalsHierarchyViewProps> = ({
               className="bg-[#111111] border border-[#262626] p-6 space-y-3"
             >
               <div className="flex items-center justify-between text-xs font-mono">
-                <span className="text-[#C5A059] uppercase tracking-widest text-[10px] font-semibold">
+                <span className="text-[#5FBF8C] uppercase tracking-widest text-[10px] font-semibold">
                   {g5.pillar}
                 </span>
                 <span className="text-[#808080] text-[10px]">{g5.targetYear}</span>
@@ -248,7 +248,7 @@ export const GoalsHierarchyView: React.FC<GoalsHierarchyViewProps> = ({
                   placeholder="e.g. Master Builder / Lead Engineer"
                   value={roleName}
                   onChange={(e) => setRoleName(e.target.value)}
-                  className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059]"
+                  className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C]"
                   required
                 />
               </div>
@@ -260,21 +260,21 @@ export const GoalsHierarchyView: React.FC<GoalsHierarchyViewProps> = ({
                   placeholder="e.g. Complete v1 architecture & ship core engine"
                   value={monthlyObjective}
                   onChange={(e) => setMonthlyObjective(e.target.value)}
-                  className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059]"
+                  className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C]"
                   required
                 />
               </div>
 
               <div>
                 <label className="text-[10px] uppercase tracking-widest text-[#808080] block mb-1">
-                  Non-Negotiable Daily Baseline <span className="text-[#C5A059]">*</span>
+                  Non-Negotiable Daily Baseline <span className="text-[#5FBF8C]">*</span>
                 </label>
                 <input
                   type="text"
                   placeholder="e.g. 90m deep work block with zero browser distractions"
                   value={nonNegotiableBaseline}
                   onChange={(e) => setNonNegotiableBaseline(e.target.value)}
-                  className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059]"
+                  className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C]"
                   required
                 />
               </div>
@@ -286,7 +286,7 @@ export const GoalsHierarchyView: React.FC<GoalsHierarchyViewProps> = ({
                     type="number"
                     value={targetOutputCount}
                     onChange={(e) => setTargetOutputCount(Number(e.target.value))}
-                    className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059] font-mono"
+                    className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C] font-mono"
                     required
                   />
                 </div>
@@ -296,7 +296,7 @@ export const GoalsHierarchyView: React.FC<GoalsHierarchyViewProps> = ({
                     type="text"
                     value={outputLabel}
                     onChange={(e) => setOutputLabel(e.target.value)}
-                    className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059]"
+                    className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C]"
                     placeholder="e.g. Sprints"
                     required
                   />
@@ -313,7 +313,7 @@ export const GoalsHierarchyView: React.FC<GoalsHierarchyViewProps> = ({
                 </button>
                 <button
                   type="submit"
-                  className="px-5 py-2 bg-[#C5A059] hover:bg-[#D6B570] text-black text-xs uppercase tracking-widest font-semibold"
+                  className="px-5 py-2 bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black text-xs uppercase tracking-widest font-semibold"
                 >
                   Save Role
                 </button>

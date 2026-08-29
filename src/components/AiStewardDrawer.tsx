@@ -104,14 +104,14 @@ export const AiStewardDrawer: React.FC<AiStewardDrawerProps> = ({
       {/* Header */}
       <div className="p-4 border-b border-[#262626] flex items-center justify-between bg-[#0A0A0A]">
         <div className="flex items-center gap-2">
-          <div className="p-1.5 bg-[#161616] text-[#C5A059] border border-[#262626]">
+          <div className="p-1.5 bg-[#161616] text-[#5FBF8C] border border-[#262626]">
             <Bot className="w-4 h-4" />
           </div>
           <div>
             <h3 className="text-sm font-serif text-[#E0E0E0]">
               AI Steward Intelligence
             </h3>
-            <span className="text-[9px] uppercase font-mono tracking-widest text-[#C5A059]">
+            <span className="text-[9px] uppercase font-mono tracking-widest text-[#5FBF8C]">
               Monastic Objective Counsel
             </span>
           </div>
@@ -131,7 +131,7 @@ export const AiStewardDrawer: React.FC<AiStewardDrawerProps> = ({
           <button
             key={idx}
             onClick={() => handleSend(qp)}
-            className="px-2.5 py-1 bg-[#161616] hover:bg-[#222222] text-[#808080] hover:text-[#C5A059] border border-[#262626] flex-shrink-0 transition-colors uppercase font-mono tracking-wider text-[9px]"
+            className="px-2.5 py-1 bg-[#161616] hover:bg-[#222222] text-[#808080] hover:text-[#5FBF8C] border border-[#262626] flex-shrink-0 transition-colors uppercase font-mono tracking-wider text-[9px]"
           >
             {qp}
           </button>
@@ -150,7 +150,7 @@ export const AiStewardDrawer: React.FC<AiStewardDrawerProps> = ({
             <div
               className={`max-w-[85%] p-3.5 ${
                 m.role === 'user'
-                  ? 'bg-[#C5A059] text-black font-medium shadow-sm'
+                  ? 'bg-[#5FBF8C] text-black font-medium shadow-sm'
                   : 'bg-[#0A0A0A] border border-[#262626] text-[#E0E0E0] font-serif leading-relaxed'
               }`}
             >
@@ -163,7 +163,7 @@ export const AiStewardDrawer: React.FC<AiStewardDrawerProps> = ({
         ))}
         {isLoading && (
           <div className="flex items-center gap-2 text-[#808080] text-xs p-2">
-            <Loader2 className="w-3.5 h-3.5 animate-spin text-[#C5A059]" />
+            <Loader2 className="w-3.5 h-3.5 animate-spin text-[#5FBF8C]" />
             <span className="font-mono text-[10px] uppercase tracking-widest">Calibrating objective counsel...</span>
           </div>
         )}
@@ -184,12 +184,12 @@ export const AiStewardDrawer: React.FC<AiStewardDrawerProps> = ({
             placeholder="Ask Steward..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            className="flex-1 px-3 py-2 bg-[#111111] border border-[#262626] text-xs text-[#E0E0E0] placeholder-[#555] focus:outline-none focus:border-[#C5A059]"
+            className="flex-1 px-3 py-2 bg-[#111111] border border-[#262626] text-xs text-[#E0E0E0] placeholder-[#555] focus:outline-none focus:border-[#5FBF8C]"
           />
           <button
             type="submit"
             disabled={isLoading || !input.trim()}
-            className="p-2 bg-[#C5A059] hover:bg-[#D6B570] disabled:opacity-40 text-black transition-colors flex-shrink-0"
+            className="p-2 bg-[#5FBF8C] hover:bg-[#7FD1A6] disabled:opacity-40 text-black transition-colors flex-shrink-0"
           >
             <Send className="w-4 h-4" />
           </button>

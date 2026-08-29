@@ -97,10 +97,10 @@ export const InterventionModal: React.FC<InterventionModalProps> = ({
         <div className="flex items-start justify-between gap-4 border-b border-[#262626] pb-4">
           <div className="space-y-1">
             <div className="flex items-center gap-2">
-              <span className="p-1 bg-[#161616] text-[#C5A059] border border-[#262626]">
+              <span className="p-1 bg-[#161616] text-[#5FBF8C] border border-[#262626]">
                 <Brain className="w-3.5 h-3.5" />
               </span>
-              <span className="text-[10px] uppercase font-mono tracking-widest text-[#C5A059]">
+              <span className="text-[10px] uppercase font-mono tracking-widest text-[#5FBF8C]">
                 Cognitive State Protocol
               </span>
             </div>
@@ -129,7 +129,7 @@ export const InterventionModal: React.FC<InterventionModalProps> = ({
               onClick={() => setStep(s)}
               className={`py-1 text-[10px] font-mono uppercase tracking-widest transition-all ${
                 step === s
-                  ? 'bg-[#C5A059] text-black font-semibold'
+                  ? 'bg-[#5FBF8C] text-black font-semibold'
                   : step > s
                   ? 'bg-[#161616] border border-[#262626] text-[#E0E0E0]'
                   : 'bg-[#0A0A0A] border border-[#262626] text-[#555]'
@@ -144,7 +144,7 @@ export const InterventionModal: React.FC<InterventionModalProps> = ({
         {step === 1 && (
           <div className="space-y-4">
             <div className="space-y-1">
-              <span className="text-[10px] uppercase font-mono tracking-widest text-[#C5A059]">
+              <span className="text-[10px] uppercase font-mono tracking-widest text-[#5FBF8C]">
                 Step 1 of 5: Objective Event
               </span>
               <h3 className="text-sm font-serif text-[#E0E0E0]">
@@ -160,7 +160,7 @@ export const InterventionModal: React.FC<InterventionModalProps> = ({
               placeholder="e.g. I opened my laptop at 08:30, looked at the API bug for 10 minutes, and opened a social media tab instead of testing the endpoint."
               value={event}
               onChange={(e) => setEvent(e.target.value)}
-              className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059] placeholder-[#555]"
+              className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C] placeholder-[#555]"
               autoFocus
             />
 
@@ -169,7 +169,7 @@ export const InterventionModal: React.FC<InterventionModalProps> = ({
                 type="button"
                 onClick={() => setStep(2)}
                 disabled={!event.trim()}
-                className="px-5 py-2 bg-[#C5A059] hover:bg-[#D6B570] disabled:opacity-40 text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5"
+                className="px-5 py-2 bg-[#5FBF8C] hover:bg-[#7FD1A6] disabled:opacity-40 text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5"
               >
                 <span>Proceed to Narrative</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -182,7 +182,7 @@ export const InterventionModal: React.FC<InterventionModalProps> = ({
         {step === 2 && (
           <div className="space-y-4">
             <div className="space-y-1">
-              <span className="text-[10px] uppercase font-mono tracking-widest text-[#C5A059]">
+              <span className="text-[10px] uppercase font-mono tracking-widest text-[#5FBF8C]">
                 Step 2 of 5: Automatic Narrative
               </span>
               <h3 className="text-sm font-serif text-[#E0E0E0]">
@@ -198,7 +198,7 @@ export const InterventionModal: React.FC<InterventionModalProps> = ({
               placeholder="e.g. 'I am too exhausted to solve this bug today. I might as well cancel my afternoon deep work sprint and wait until tomorrow morning.'"
               value={automaticNarrative}
               onChange={(e) => setAutomaticNarrative(e.target.value)}
-              className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059] placeholder-[#555]"
+              className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C] placeholder-[#555]"
               autoFocus
             />
 
@@ -215,7 +215,7 @@ export const InterventionModal: React.FC<InterventionModalProps> = ({
                 type="button"
                 onClick={() => setStep(3)}
                 disabled={!automaticNarrative.trim()}
-                className="px-5 py-2 bg-[#C5A059] hover:bg-[#D6B570] disabled:opacity-40 text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5"
+                className="px-5 py-2 bg-[#5FBF8C] hover:bg-[#7FD1A6] disabled:opacity-40 text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5"
               >
                 <span>Proceed to Anchor</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -228,7 +228,7 @@ export const InterventionModal: React.FC<InterventionModalProps> = ({
         {step === 3 && (
           <div className="space-y-4">
             <div className="space-y-1">
-              <span className="text-[10px] uppercase font-mono tracking-widest text-[#C5A059]">
+              <span className="text-[10px] uppercase font-mono tracking-widest text-[#5FBF8C]">
                 Step 3 of 5: Fixed Belief Anchor
               </span>
               <h3 className="text-sm font-serif text-[#E0E0E0]">
@@ -243,13 +243,13 @@ export const InterventionModal: React.FC<InterventionModalProps> = ({
               type="text"
               value={fixedBeliefAnchor}
               onChange={(e) => setFixedBeliefAnchor(e.target.value)}
-              className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059] font-serif"
+              className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C] font-serif"
             />
 
             {/* AI Coach Helper Option */}
             <div className="p-4 bg-[#161616] border border-[#262626] flex items-center justify-between gap-3">
               <div className="text-xs text-[#808080]">
-                <span className="font-serif text-[#C5A059] flex items-center gap-1.5">
+                <span className="font-serif text-[#5FBF8C] flex items-center gap-1.5">
                   <Bot className="w-3.5 h-3.5" /> AI Steward Coach
                 </span>
                 <span>Let Gemini generate the empirical reinterpretation and proof action.</span>
@@ -260,7 +260,7 @@ export const InterventionModal: React.FC<InterventionModalProps> = ({
                 disabled={isAiLoading}
                 className="px-4 py-1.5 bg-[#0A0A0A] hover:bg-[#222222] text-[#E0E0E0] border border-[#262626] text-xs font-semibold uppercase tracking-widest flex items-center gap-1.5 flex-shrink-0"
               >
-                {isAiLoading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Sparkles className="w-3.5 h-3.5 text-[#C5A059]" />}
+                {isAiLoading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Sparkles className="w-3.5 h-3.5 text-[#5FBF8C]" />}
                 <span>Auto-Coach</span>
               </button>
             </div>
@@ -277,7 +277,7 @@ export const InterventionModal: React.FC<InterventionModalProps> = ({
               <button
                 type="button"
                 onClick={() => setStep(4)}
-                className="px-5 py-2 bg-[#C5A059] hover:bg-[#D6B570] text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5"
+                className="px-5 py-2 bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5"
               >
                 <span>Proceed to Reinterpretation</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -290,7 +290,7 @@ export const InterventionModal: React.FC<InterventionModalProps> = ({
         {step === 4 && (
           <div className="space-y-4">
             <div className="space-y-1">
-              <span className="text-[10px] uppercase font-mono tracking-widest text-[#C5A059]">
+              <span className="text-[10px] uppercase font-mono tracking-widest text-[#5FBF8C]">
                 Step 4 of 5: Productive Reinterpretation
               </span>
               <h3 className="text-sm font-serif text-[#E0E0E0]">
@@ -306,7 +306,7 @@ export const InterventionModal: React.FC<InterventionModalProps> = ({
               placeholder="e.g. The bug friction indicates that the function is doing too much and needs to be split into 2 smaller helpers. It is not evidence of lack of skill."
               value={productiveReinterpretation}
               onChange={(e) => setProductiveReinterpretation(e.target.value)}
-              className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059] placeholder-[#555]"
+              className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C] placeholder-[#555]"
               autoFocus
             />
 
@@ -323,7 +323,7 @@ export const InterventionModal: React.FC<InterventionModalProps> = ({
                 type="button"
                 onClick={() => setStep(5)}
                 disabled={!productiveReinterpretation.trim()}
-                className="px-5 py-2 bg-[#C5A059] hover:bg-[#D6B570] disabled:opacity-40 text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5"
+                className="px-5 py-2 bg-[#5FBF8C] hover:bg-[#7FD1A6] disabled:opacity-40 text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5"
               >
                 <span>Proceed to Proof Action</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -336,7 +336,7 @@ export const InterventionModal: React.FC<InterventionModalProps> = ({
         {step === 5 && (
           <div className="space-y-4">
             <div className="space-y-1">
-              <span className="text-[10px] uppercase font-mono tracking-widest text-[#C5A059]">
+              <span className="text-[10px] uppercase font-mono tracking-widest text-[#5FBF8C]">
                 Step 5 of 5: Physical Proof Action
               </span>
               <h3 className="text-sm font-serif text-[#E0E0E0]">
@@ -352,12 +352,12 @@ export const InterventionModal: React.FC<InterventionModalProps> = ({
               placeholder="e.g. Write 1 unit test for the isolated helper function within 15 minutes."
               value={proofAction}
               onChange={(e) => setProofAction(e.target.value)}
-              className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#C5A059]/60 text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059] font-mono font-medium"
+              className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#5FBF8C]/60 text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C] font-mono font-medium"
               autoFocus
             />
 
             {stewardNote && (
-              <div className="p-3 bg-[#161616] border border-[#262626] text-xs text-[#C5A059] font-serif italic">
+              <div className="p-3 bg-[#161616] border border-[#262626] text-xs text-[#5FBF8C] font-serif italic">
                 <strong>Steward Note:</strong> &ldquo;{stewardNote}&rdquo;
               </div>
             )}
@@ -375,7 +375,7 @@ export const InterventionModal: React.FC<InterventionModalProps> = ({
                 type="button"
                 onClick={handleSave}
                 disabled={!proofAction.trim()}
-                className="px-5 py-2 bg-[#C5A059] hover:bg-[#D6B570] disabled:opacity-40 text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5 shadow-md"
+                className="px-5 py-2 bg-[#5FBF8C] hover:bg-[#7FD1A6] disabled:opacity-40 text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5 shadow-md"
               >
                 <CheckCircle2 className="w-4 h-4" />
                 <span>Save & Commit Action</span>

@@ -62,10 +62,10 @@ export const GratitudeScanModal: React.FC<GratitudeScanModalProps> = ({
         <div className="flex items-start justify-between gap-4 border-b border-[#262626] pb-4">
           <div className="space-y-1">
             <div className="flex items-center gap-2">
-              <span className="p-1 bg-[#161616] text-[#C5A059] border border-[#262626]">
+              <span className="p-1 bg-[#161616] text-[#5FBF8C] border border-[#262626]">
                 <Feather className="w-3.5 h-3.5" />
               </span>
-              <span className="text-[10px] uppercase font-mono tracking-widest text-[#C5A059]">
+              <span className="text-[10px] uppercase font-mono tracking-widest text-[#5FBF8C]">
                 18:00 Protected Anchor
               </span>
             </div>
@@ -123,9 +123,9 @@ export const GratitudeScanModal: React.FC<GratitudeScanModalProps> = ({
               </div>
 
               {/* 90-120 Minute Proof Action */}
-              <div className="p-4 bg-[#161616] border border-[#C5A059]/40 space-y-3">
+              <div className="p-4 bg-[#161616] border border-[#5FBF8C]/40 space-y-3">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-serif text-[#C5A059]">
+                  <span className="text-xs font-serif text-[#5FBF8C]">
                     4. Next 90–120 Minutes Proof Action:
                   </span>
                   <button
@@ -136,7 +136,7 @@ export const GratitudeScanModal: React.FC<GratitudeScanModalProps> = ({
                     className={`px-3 py-1.5 text-xs uppercase tracking-widest font-semibold transition-all ${
                       todayScan.proofActionCompleted
                         ? 'bg-[#6BBF8E] text-black shadow-sm'
-                        : 'bg-[#C5A059] hover:bg-[#D6B570] text-black shadow-sm'
+                        : 'bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black shadow-sm'
                     }`}
                   >
                     {todayScan.proofActionCompleted ? '✓ Action Executed' : 'Mark Action Done'}
@@ -168,7 +168,7 @@ export const GratitudeScanModal: React.FC<GratitudeScanModalProps> = ({
                 placeholder="e.g. The mental clarity and health to write 1,000 lines of clean architecture today without pain."
                 value={q1}
                 onChange={(e) => setQ1(e.target.value)}
-                className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059] placeholder-[#555]"
+                className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C] placeholder-[#555]"
                 required
                 autoFocus
               />
@@ -184,7 +184,7 @@ export const GratitudeScanModal: React.FC<GratitudeScanModalProps> = ({
                 placeholder="e.g. Getting tired at 15:00 showed that scheduling heavy planning right after lunch is tactical error, not a character flaw."
                 value={q2}
                 onChange={(e) => setQ2(e.target.value)}
-                className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059] placeholder-[#555]"
+                className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C] placeholder-[#555]"
                 required
               />
             </div>
@@ -199,14 +199,14 @@ export const GratitudeScanModal: React.FC<GratitudeScanModalProps> = ({
                 placeholder="e.g. My identity as a disciplined builder is invariant; I simply adjust the afternoon protocol tomorrow."
                 value={q3}
                 onChange={(e) => setQ3(e.target.value)}
-                className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059] placeholder-[#555]"
+                className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C] placeholder-[#555]"
                 required
               />
             </div>
 
             {/* Question 4 */}
             <div>
-              <label className="text-[10px] uppercase tracking-widest text-[#C5A059] block mb-1">
+              <label className="text-[10px] uppercase tracking-widest text-[#5FBF8C] block mb-1">
                 4. One intentional action that will be executed in the next 90–120 minutes as physical proof of the belief:
               </label>
               <input
@@ -214,14 +214,14 @@ export const GratitudeScanModal: React.FC<GratitudeScanModalProps> = ({
                 placeholder="e.g. Spend 45 minutes coding the persistence layer with zero phone glances before 19:30."
                 value={q4}
                 onChange={(e) => setQ4(e.target.value)}
-                className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#C5A059]/50 text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059] placeholder-[#555] font-mono font-medium"
+                className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#5FBF8C]/50 text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C] placeholder-[#555] font-mono font-medium"
                 required
               />
             </div>
 
             <div className="flex items-center justify-between pt-4 border-t border-[#262626]">
               <div className="text-[10px] text-[#808080] font-mono flex items-center gap-1">
-                <Lock className="w-3 h-3 text-[#C5A059]" />
+                <Lock className="w-3 h-3 text-[#5FBF8C]" />
                 <span>Timestamped upon submission (+20 pts)</span>
               </div>
 
@@ -235,7 +235,7 @@ export const GratitudeScanModal: React.FC<GratitudeScanModalProps> = ({
                 </button>
                 <button
                   type="submit"
-                  className="px-5 py-2 bg-[#C5A059] hover:bg-[#D6B570] text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5 shadow-md"
+                  className="px-5 py-2 bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5 shadow-md"
                 >
                   <CheckCircle2 className="w-4 h-4" />
                   <span>Lock In Scan</span>

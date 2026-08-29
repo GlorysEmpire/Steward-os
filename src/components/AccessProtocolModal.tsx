@@ -124,10 +124,10 @@ export const AccessProtocolModal: React.FC<AccessProtocolModalProps> = ({
         <div className="flex items-start justify-between gap-4 border-b border-[#262626] pb-4">
           <div className="space-y-1">
             <div className="flex items-center gap-2">
-              <span className="p-1 bg-[#161616] text-[#C5A059] border border-[#262626]">
+              <span className="p-1 bg-[#161616] text-[#5FBF8C] border border-[#262626]">
                 <Compass className="w-3.5 h-3.5" />
               </span>
-              <span className="text-[10px] uppercase font-mono tracking-widest text-[#C5A059]">
+              <span className="text-[10px] uppercase font-mono tracking-widest text-[#5FBF8C]">
                 Guided Somatic Reset
               </span>
             </div>
@@ -169,7 +169,7 @@ export const AccessProtocolModal: React.FC<AccessProtocolModalProps> = ({
             disabled={isAiLoading}
             className="px-3.5 py-1.5 bg-[#161616] hover:bg-[#222222] border border-[#262626] text-[#E0E0E0] text-[10px] uppercase tracking-widest font-semibold flex items-center gap-1.5 flex-shrink-0"
           >
-            {isAiLoading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Bot className="w-3.5 h-3.5 text-[#C5A059]" />}
+            {isAiLoading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Bot className="w-3.5 h-3.5 text-[#5FBF8C]" />}
             <span>Tailor Flow</span>
           </button>
         </div>
@@ -182,7 +182,7 @@ export const AccessProtocolModal: React.FC<AccessProtocolModalProps> = ({
               onClick={() => handleSelectPhase(idx)}
               className={`p-2.5 text-left border transition-all ${
                 currentPhaseIdx === idx
-                  ? 'bg-[#161616] border-[#C5A059] text-[#C5A059]'
+                  ? 'bg-[#161616] border-[#5FBF8C] text-[#5FBF8C]'
                   : 'bg-[#0A0A0A] border-[#262626] text-[#808080] hover:text-[#E0E0E0]'
               }`}
             >
@@ -194,7 +194,7 @@ export const AccessProtocolModal: React.FC<AccessProtocolModalProps> = ({
 
         {/* Active Phase Card */}
         <div className="p-6 bg-[#0A0A0A] border border-[#262626] space-y-4 text-center">
-          <span className="text-[10px] font-mono uppercase tracking-widest text-[#C5A059]">
+          <span className="text-[10px] font-mono uppercase tracking-widest text-[#5FBF8C]">
             Phase {currentPhase.step}: {currentPhase.name}
           </span>
 
@@ -203,7 +203,7 @@ export const AccessProtocolModal: React.FC<AccessProtocolModalProps> = ({
           </p>
 
           {/* Countdown Clock */}
-          <div className="text-4xl sm:text-5xl font-mono text-[#C5A059] py-2">
+          <div className="text-4xl sm:text-5xl font-mono text-[#5FBF8C] py-2">
             00:{String(timeLeft).padStart(2, '0')}
           </div>
 
@@ -212,7 +212,7 @@ export const AccessProtocolModal: React.FC<AccessProtocolModalProps> = ({
             <button
               id="access-protocol-timer-toggle"
               onClick={handleToggleTimer}
-              className="px-6 py-2 bg-[#C5A059] hover:bg-[#D6B570] text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-2 shadow-sm"
+              className="px-6 py-2 bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-2 shadow-sm"
             >
               {isRunning ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
               <span>{isRunning ? 'Pause' : 'Start Timer'}</span>

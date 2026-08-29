@@ -110,7 +110,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       <div className="bg-[#111111] border border-[#262626] p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div>
           <div className="flex items-center gap-2">
-            <span className="text-[10px] uppercase font-mono tracking-widest px-2 py-0.5 bg-[#161616] text-[#C5A059] border border-[#262626]">
+            <span className="text-[10px] uppercase font-mono tracking-widest px-2 py-0.5 bg-[#161616] text-[#5FBF8C] border border-[#262626]">
               Output Deliverables Board
             </span>
           </div>
@@ -143,7 +143,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
           <button
             id="agenda-add-task-btn"
             onClick={() => handleOpenAddForDate(appState.currentDate)}
-            className="px-5 py-2.5 bg-[#C5A059] hover:bg-[#D6B570] text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-2 shadow-sm flex-shrink-0"
+            className="px-5 py-2.5 bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-2 shadow-sm flex-shrink-0"
           >
             <Plus className="w-4 h-4" />
             <span>Add Agenda</span>
@@ -162,13 +162,13 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
               key={day.dateStr}
               className={`border flex flex-col min-h-[380px] transition-all ${
                 day.isToday
-                  ? 'bg-[#161616] border-[#C5A059]/40 shadow-sm'
+                  ? 'bg-[#161616] border-[#5FBF8C]/40 shadow-sm'
                   : 'bg-[#111111] border-[#262626]'
               }`}
             >
               {/* Day Column Header */}
               <div className={`p-3.5 border-b flex items-center justify-between ${
-                day.isToday ? 'border-[#C5A059]/30 bg-[#1A1A1A]' : 'border-[#262626]'
+                day.isToday ? 'border-[#5FBF8C]/30 bg-[#1A1A1A]' : 'border-[#262626]'
               }`}>
                 <div>
                   <div className="flex items-center gap-2">
@@ -176,7 +176,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
                       {day.dayName}
                     </span>
                     <span className={`text-xs font-mono font-bold px-1.5 py-0.2 ${
-                      day.isToday ? 'bg-[#C5A059] text-black' : 'text-[#808080]'
+                      day.isToday ? 'bg-[#5FBF8C] text-black' : 'text-[#808080]'
                     }`}>
                       {day.dayNum}
                     </span>
@@ -212,7 +212,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
                         className={`p-3 border transition-all space-y-2 ${
                           task.completed
                             ? 'bg-[#0A0A0A] border-[#222222] opacity-50'
-                            : 'bg-[#161616] border-[#262626] hover:border-[#C5A059]'
+                            : 'bg-[#161616] border-[#262626] hover:border-[#5FBF8C]'
                         }`}
                       >
                         <div className="flex items-start gap-2">
@@ -224,8 +224,8 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
                             }}
                             className="mt-0.5 flex-shrink-0"
                           >
-                            <div className="w-3.5 h-3.5 border border-[#C5A059] flex items-center justify-center">
-                              {task.completed && <div className="w-2 h-2 bg-[#C5A059]"></div>}
+                            <div className="w-3.5 h-3.5 border border-[#5FBF8C] flex items-center justify-center">
+                              {task.completed && <div className="w-2 h-2 bg-[#5FBF8C]"></div>}
                             </div>
                           </button>
 
@@ -251,7 +251,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
 
                         <div className="flex items-center justify-between gap-1 pl-5 pt-1 text-[9px]">
                           {linkedRole && (
-                            <span className="truncate max-w-[100px] text-[#C5A059] bg-[#0A0A0A] px-1.5 py-0.5 border border-[#262626] font-mono">
+                            <span className="truncate max-w-[100px] text-[#5FBF8C] bg-[#0A0A0A] px-1.5 py-0.5 border border-[#262626] font-mono">
                               {linkedRole.roleName}
                             </span>
                           )}
@@ -290,7 +290,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
               <h2 className="text-lg font-serif text-[#E0E0E0]">
                 Schedule Finite Agenda Task
               </h2>
-              <span className="text-xs font-mono text-[#C5A059]">{formatDateDisplay(targetDateForAdd)}</span>
+              <span className="text-xs font-mono text-[#5FBF8C]">{formatDateDisplay(targetDateForAdd)}</span>
             </div>
 
             <form onSubmit={handleCreate} className="space-y-4">
@@ -301,7 +301,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
                   placeholder="e.g. Write migration script for legacy user profiles"
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
-                  className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059]"
+                  className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C]"
                   required
                   autoFocus
                 />
@@ -309,14 +309,14 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
 
               <div>
                 <label className="text-[10px] uppercase tracking-widest text-[#808080] block mb-1">
-                  Verifiable Output Deliverable Unit <span className="text-[#C5A059]">*</span>
+                  Verifiable Output Deliverable Unit <span className="text-[#5FBF8C]">*</span>
                 </label>
                 <input
                   type="text"
                   placeholder="e.g. 1 script file committed & verified with tests"
                   value={outputUnit}
                   onChange={(e) => setOutputUnit(e.target.value)}
-                  className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059]"
+                  className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C]"
                   required
                 />
                 <p className="text-[10px] text-[#808080] mt-1">
@@ -375,7 +375,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
                 </button>
                 <button
                   type="submit"
-                  className="px-5 py-2 bg-[#C5A059] hover:bg-[#D6B570] text-black text-xs uppercase tracking-widest font-semibold"
+                  className="px-5 py-2 bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black text-xs uppercase tracking-widest font-semibold"
                 >
                   Save Agenda Task
                 </button>

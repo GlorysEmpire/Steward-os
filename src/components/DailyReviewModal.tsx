@@ -79,10 +79,10 @@ export const DailyReviewModal: React.FC<DailyReviewModalProps> = ({
         <div className="flex items-start justify-between gap-4 border-b border-[#262626] pb-4">
           <div className="space-y-1">
             <div className="flex items-center gap-2">
-              <span className="p-1 bg-[#161616] text-[#C5A059] border border-[#262626]">
+              <span className="p-1 bg-[#161616] text-[#5FBF8C] border border-[#262626]">
                 <Moon className="w-3.5 h-3.5" />
               </span>
-              <span className="text-[10px] uppercase font-mono tracking-widest text-[#C5A059]">
+              <span className="text-[10px] uppercase font-mono tracking-widest text-[#5FBF8C]">
                 20:20 Evening Protocol
               </span>
             </div>
@@ -123,7 +123,7 @@ export const DailyReviewModal: React.FC<DailyReviewModalProps> = ({
                         ? status === 'yes'
                           ? 'bg-[#6BBF8E] text-black font-semibold'
                           : status === 'partial'
-                          ? 'bg-[#C5A059] text-black font-semibold'
+                          ? 'bg-[#5FBF8C] text-black font-semibold'
                           : 'bg-[#E06C75] text-white font-semibold'
                         : 'bg-[#161616] border border-[#262626] text-[#808080] hover:text-[#E0E0E0]'
                     }`}
@@ -139,7 +139,7 @@ export const DailyReviewModal: React.FC<DailyReviewModalProps> = ({
               placeholder="Describe physical evidence of kept commitments or exact failure points..."
               value={q1}
               onChange={(e) => setQ1(e.target.value)}
-              className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059] placeholder-[#555]"
+              className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C] placeholder-[#555]"
               required
             />
           </div>
@@ -154,7 +154,7 @@ export const DailyReviewModal: React.FC<DailyReviewModalProps> = ({
               placeholder="e.g. Scrolled phone for 20 minutes before afternoon deep work sprint due to task resistance..."
               value={q2}
               onChange={(e) => setQ2(e.target.value)}
-              className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059] placeholder-[#555]"
+              className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C] placeholder-[#555]"
               required
             />
 
@@ -190,7 +190,7 @@ export const DailyReviewModal: React.FC<DailyReviewModalProps> = ({
                       handleAddTrigger();
                     }
                   }}
-                  className="flex-1 px-3 py-1.5 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] placeholder-[#555] focus:outline-none focus:border-[#C5A059]"
+                  className="flex-1 px-3 py-1.5 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] placeholder-[#555] focus:outline-none focus:border-[#5FBF8C]"
                 />
                 <button
                   type="button"
@@ -221,7 +221,7 @@ export const DailyReviewModal: React.FC<DailyReviewModalProps> = ({
               placeholder="Reflect on today's actions in light of who you intend to be remembered as..."
               value={q3}
               onChange={(e) => setQ3(e.target.value)}
-              className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059] placeholder-[#555]"
+              className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C] placeholder-[#555]"
               required
             />
           </div>
@@ -229,7 +229,7 @@ export const DailyReviewModal: React.FC<DailyReviewModalProps> = ({
           {/* Bottom Actions */}
           <div className="flex items-center justify-between pt-4 border-t border-[#262626]">
             <div className="text-[10px] text-[#808080] font-mono flex items-center gap-1">
-              <Lock className="w-3 h-3 text-[#C5A059]" />
+              <Lock className="w-3 h-3 text-[#5FBF8C]" />
               <span>Saves & reinforces evening shutdown</span>
             </div>
 
@@ -243,7 +243,7 @@ export const DailyReviewModal: React.FC<DailyReviewModalProps> = ({
               </button>
               <button
                 type="submit"
-                className="px-5 py-2 bg-[#C5A059] hover:bg-[#D6B570] text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5 shadow-md"
+                className="px-5 py-2 bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5 shadow-md"
               >
                 <CheckCircle2 className="w-4 h-4" />
                 <span>Save Review</span>

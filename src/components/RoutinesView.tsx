@@ -68,7 +68,7 @@ export const RoutinesView: React.FC<RoutinesViewProps> = ({
       <div className="bg-[#111111] border border-[#262626] p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
         <div>
           <div className="flex items-center gap-2">
-            <span className="text-[10px] uppercase font-mono tracking-widest px-2 py-0.5 bg-[#161616] text-[#C5A059] border border-[#262626]">
+            <span className="text-[10px] uppercase font-mono tracking-widest px-2 py-0.5 bg-[#161616] text-[#5FBF8C] border border-[#262626]">
               Schedule & Habit Engine
             </span>
           </div>
@@ -83,7 +83,7 @@ export const RoutinesView: React.FC<RoutinesViewProps> = ({
         <button
           id="add-routine-block-btn"
           onClick={() => setShowAddModal(true)}
-          className="px-5 py-2.5 bg-[#C5A059] hover:bg-[#D6B570] text-black text-xs font-semibold uppercase tracking-widest flex items-center gap-2 transition-all shadow-sm flex-shrink-0"
+          className="px-5 py-2.5 bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black text-xs font-semibold uppercase tracking-widest flex items-center gap-2 transition-all shadow-sm flex-shrink-0"
         >
           <Plus className="w-4 h-4" />
           <span>Add Routine Block</span>
@@ -101,28 +101,28 @@ export const RoutinesView: React.FC<RoutinesViewProps> = ({
               key={routine.id}
               className={`p-6 border transition-all ${
                 routine.isProtected
-                  ? 'bg-[#161616] border-[#C5A059]/40 shadow-sm'
+                  ? 'bg-[#161616] border-[#5FBF8C]/40 shadow-sm'
                   : routine.status === 'completed'
                   ? 'bg-[#111111] border-[#262626] opacity-75'
                   : routine.status === 'minimum-viable'
-                  ? 'bg-[#161616] border-[#C5A059]/40'
+                  ? 'bg-[#161616] border-[#5FBF8C]/40'
                   : routine.status === 'skipped'
                   ? 'bg-[#0A0A0A] border-[#222222] opacity-50'
-                  : 'bg-[#111111] border-[#262626] hover:border-[#C5A059]/60'
+                  : 'bg-[#111111] border-[#262626] hover:border-[#5FBF8C]/60'
               }`}
             >
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div className="space-y-2 flex-1">
                   <div className="flex items-center gap-2.5 flex-wrap">
-                    <span className="font-mono text-[10px] uppercase px-2 py-0.5 bg-[#0A0A0A] text-[#C5A059] border border-[#262626]">
+                    <span className="font-mono text-[10px] uppercase px-2 py-0.5 bg-[#0A0A0A] text-[#5FBF8C] border border-[#262626]">
                       {routine.timeStart} — {routine.timeEnd}
                     </span>
                     <h3 className="text-base font-serif text-[#E0E0E0]">
                       {routine.name}
                     </h3>
                     {routine.isProtected && (
-                      <span className="text-[9px] uppercase font-mono px-2 py-0.5 bg-[#0A0A0A] text-[#C5A059] border border-[#C5A059]/40 flex items-center gap-1">
-                        <ShieldCheck className="w-3 h-3 text-[#C5A059]" />
+                      <span className="text-[9px] uppercase font-mono px-2 py-0.5 bg-[#0A0A0A] text-[#5FBF8C] border border-[#5FBF8C]/40 flex items-center gap-1">
+                        <ShieldCheck className="w-3 h-3 text-[#5FBF8C]" />
                         Protected Anchor
                       </span>
                     )}
@@ -132,7 +132,7 @@ export const RoutinesView: React.FC<RoutinesViewProps> = ({
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2">
                     {routine.items.map((item, idx) => (
                       <div key={idx} className="flex items-center gap-2 text-xs text-[#808080]">
-                        <span className="w-1.5 h-1.5 bg-[#C5A059] flex-shrink-0" />
+                        <span className="w-1.5 h-1.5 bg-[#5FBF8C] flex-shrink-0" />
                         <span className="text-[#A3A3A3]">{item}</span>
                       </div>
                     ))}
@@ -145,7 +145,7 @@ export const RoutinesView: React.FC<RoutinesViewProps> = ({
                     <button
                       id={`open-scan-from-routine-${routine.id}`}
                       onClick={onOpenGratitudeScan}
-                      className="px-3 py-1.5 bg-[#161616] hover:bg-[#222222] text-[#C5A059] border border-[#C5A059]/50 text-xs font-medium uppercase tracking-widest flex items-center gap-1.5"
+                      className="px-3 py-1.5 bg-[#161616] hover:bg-[#222222] text-[#5FBF8C] border border-[#5FBF8C]/50 text-xs font-medium uppercase tracking-widest flex items-center gap-1.5"
                     >
                       <Feather className="w-3.5 h-3.5" />
                       <span>Execute Scan</span>
@@ -189,12 +189,12 @@ export const RoutinesView: React.FC<RoutinesViewProps> = ({
                     }}
                     className={`px-3 py-1.5 text-xs font-medium uppercase tracking-widest flex items-center gap-1 transition-all ${
                       routine.status === 'minimum-viable'
-                        ? 'bg-[#C5A059] text-black font-bold shadow-sm'
-                        : 'border border-[#262626] text-[#808080] hover:border-[#C5A059] hover:text-[#C5A059]'
+                        ? 'bg-[#5FBF8C] text-black font-bold shadow-sm'
+                        : 'border border-[#262626] text-[#808080] hover:border-[#5FBF8C] hover:text-[#5FBF8C]'
                     }`}
                     title="Mark Minimum Viable execution"
                   >
-                    <Zap className="w-3 h-3 text-[#C5A059]" />
+                    <Zap className="w-3 h-3 text-[#5FBF8C]" />
                     <span>MVA</span>
                   </button>
 
@@ -240,7 +240,7 @@ export const RoutinesView: React.FC<RoutinesViewProps> = ({
                   placeholder="e.g. Afternoon Physical Stewardship"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059]"
+                  className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C]"
                   required
                 />
               </div>
@@ -252,7 +252,7 @@ export const RoutinesView: React.FC<RoutinesViewProps> = ({
                     type="time"
                     value={timeStart}
                     onChange={(e) => setTimeStart(e.target.value)}
-                    className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059] font-mono"
+                    className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C] font-mono"
                     required
                   />
                 </div>
@@ -262,7 +262,7 @@ export const RoutinesView: React.FC<RoutinesViewProps> = ({
                     type="time"
                     value={timeEnd}
                     onChange={(e) => setTimeEnd(e.target.value)}
-                    className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059] font-mono"
+                    className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C] font-mono"
                     required
                   />
                 </div>
@@ -275,7 +275,7 @@ export const RoutinesView: React.FC<RoutinesViewProps> = ({
                   placeholder="e.g.&#10;500ml water&#10;Mobility sequence&#10;Log reps"
                   value={itemsText}
                   onChange={(e) => setItemsText(e.target.value)}
-                  className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059]"
+                  className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C]"
                 />
               </div>
 
@@ -285,7 +285,7 @@ export const RoutinesView: React.FC<RoutinesViewProps> = ({
                   id="protected-checkbox"
                   checked={isProtected}
                   onChange={(e) => setIsProtected(e.target.checked)}
-                  className="bg-[#0A0A0A] border-[#262626] text-[#C5A059] focus:ring-0"
+                  className="bg-[#0A0A0A] border-[#262626] text-[#5FBF8C] focus:ring-0"
                 />
                 <label htmlFor="protected-checkbox" className="text-xs text-[#A3A3A3] cursor-pointer">
                   Mark as Non-Negotiable Protected Anchor
@@ -302,7 +302,7 @@ export const RoutinesView: React.FC<RoutinesViewProps> = ({
                 </button>
                 <button
                   type="submit"
-                  className="px-5 py-2 bg-[#C5A059] hover:bg-[#D6B570] text-black text-xs uppercase tracking-widest font-semibold"
+                  className="px-5 py-2 bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black text-xs uppercase tracking-widest font-semibold"
                 >
                   Create Block
                 </button>

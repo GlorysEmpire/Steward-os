@@ -108,8 +108,8 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
       <div className="border border-[#262626] bg-[#111111] p-6 sm:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 relative">
         <div className="space-y-2">
           <div className="flex items-center gap-3">
-            <span className="px-2.5 py-0.5 rounded-none bg-[#161616] border border-[#262626] text-[#C5A059] text-[10px] uppercase tracking-widest font-semibold flex items-center gap-1.5">
-              <ShieldCheck className="w-3.5 h-3.5 text-[#C5A059]" />
+            <span className="px-2.5 py-0.5 rounded-none bg-[#161616] border border-[#262626] text-[#5FBF8C] text-[10px] uppercase tracking-widest font-semibold flex items-center gap-1.5">
+              <ShieldCheck className="w-3.5 h-3.5 text-[#5FBF8C]" />
               Never-Zero Baseline Integrity
             </span>
             <span className="text-[10px] uppercase tracking-widest text-[#808080]">
@@ -136,7 +136,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
           <button
             id="dash-start-gratitude-scan-btn"
             onClick={onOpenGratitudeScan}
-            className="px-4 py-2.5 text-xs bg-[#C5A059] hover:bg-[#D6B570] text-black font-semibold uppercase tracking-widest transition-all shadow-sm flex items-center gap-2"
+            className="px-4 py-2.5 text-xs bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black font-semibold uppercase tracking-widest transition-all shadow-sm flex items-center gap-2"
           >
             <Feather className="w-3.5 h-3.5" />
             <span>Start 18:00 Scan</span>
@@ -156,7 +156,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
 
         <div className="p-5 bg-[#161616] border border-[#262626]">
           <p className="text-[10px] uppercase tracking-widest text-[#808080] mb-2 font-medium">Active Operating Anchor</p>
-          <p className="text-2xl font-serif text-[#C5A059] flex items-baseline gap-2 truncate">
+          <p className="text-2xl font-serif text-[#5FBF8C] flex items-baseline gap-2 truncate">
             Deep Work Focus
             <span className="text-xs italic text-[#808080] font-sans">Protected 18:00 Fixed</span>
           </p>
@@ -189,10 +189,10 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
               <button
                 id="dash-recovery-btn"
                 onClick={() => onOpenRecovery()}
-                className="text-[10px] uppercase tracking-widest font-mono text-[#C5A059] hover:text-white border border-[#262626] hover:border-[#C5A059] px-3 py-1.5 transition-all flex items-center gap-1.5"
+                className="text-[10px] uppercase tracking-widest font-mono text-[#5FBF8C] hover:text-white border border-[#262626] hover:border-[#5FBF8C] px-3 py-1.5 transition-all flex items-center gap-1.5"
                 title="Stuck or fell off? Generate immediate zero-debt micro recovery action"
               >
-                <Zap className="w-3 h-3 text-[#C5A059]" />
+                <Zap className="w-3 h-3 text-[#5FBF8C]" />
                 <span>Zero-Debt Micro Recovery</span>
               </button>
             </div>
@@ -210,16 +210,16 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
                       isCompleted
                         ? 'border-[#262626] bg-[#111111] opacity-75'
                         : isMva
-                        ? 'border-[#C5A059]/40 bg-[#161616]'
+                        ? 'border-[#5FBF8C]/40 bg-[#161616]'
                         : isSkipped
                         ? 'border-[#333] opacity-50 bg-[#0A0A0A]'
-                        : 'border-[#262626] hover:border-[#C5A059]/60'
+                        : 'border-[#262626] hover:border-[#5FBF8C]/60'
                     }`}
                   >
                     <div className="flex items-start justify-between gap-4">
                       <div className="space-y-1.5 flex-1">
                         <div className="flex items-center gap-2 flex-wrap">
-                          <span className="font-mono text-[10px] uppercase px-2 py-0.5 bg-[#161616] text-[#C5A059] border border-[#262626]">
+                          <span className="font-mono text-[10px] uppercase px-2 py-0.5 bg-[#161616] text-[#5FBF8C] border border-[#262626]">
                             {routine.timeStart} – {routine.timeEnd}
                           </span>
                           <h3
@@ -227,14 +227,14 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
                               isCompleted
                                 ? 'text-[#808080] line-through'
                                 : isMva
-                                ? 'text-[#C5A059]'
+                                ? 'text-[#5FBF8C]'
                                 : 'text-[#E0E0E0]'
                             }`}
                           >
                             {routine.name}
                           </h3>
                           {routine.isProtected && (
-                            <span className="text-[9px] uppercase font-mono px-1.5 py-0.5 bg-[#161616] text-[#C5A059] border border-[#C5A059]/40 tracking-wider">
+                            <span className="text-[9px] uppercase font-mono px-1.5 py-0.5 bg-[#161616] text-[#5FBF8C] border border-[#5FBF8C]/40 tracking-wider">
                               Protected Anchor
                             </span>
                           )}
@@ -275,8 +275,8 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
                           }}
                           className={`px-2.5 py-1.5 text-xs uppercase tracking-widest transition-all ${
                             isMva
-                              ? 'bg-[#C5A059] text-black font-bold shadow-sm'
-                              : 'border border-[#262626] text-[#808080] hover:border-[#C5A059] hover:text-[#C5A059]'
+                              ? 'bg-[#5FBF8C] text-black font-bold shadow-sm'
+                              : 'border border-[#262626] text-[#808080] hover:border-[#5FBF8C] hover:text-[#5FBF8C]'
                           }`}
                           title="Fulfill via Minimum Viable Action"
                         >
@@ -304,9 +304,9 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
               <button
                 id="dash-add-task-toggle"
                 onClick={() => setShowTaskForm(!showTaskForm)}
-                className="text-[10px] uppercase tracking-widest px-3 py-1.5 bg-[#161616] hover:bg-[#222222] text-[#E0E0E0] border border-[#262626] hover:border-[#C5A059] flex items-center gap-1.5 transition-all"
+                className="text-[10px] uppercase tracking-widest px-3 py-1.5 bg-[#161616] hover:bg-[#222222] text-[#E0E0E0] border border-[#262626] hover:border-[#5FBF8C] flex items-center gap-1.5 transition-all"
               >
-                <Plus className="w-3 h-3 text-[#C5A059]" />
+                <Plus className="w-3 h-3 text-[#5FBF8C]" />
                 <span>Add Task</span>
               </button>
             </div>
@@ -319,7 +319,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
                   placeholder="Task title (e.g. Draft Q4 strategic stewardship brief)"
                   value={newTaskTitle}
                   onChange={(e) => setNewTaskTitle(e.target.value)}
-                  className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] placeholder-[#555] focus:outline-none focus:border-[#C5A059]"
+                  className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] placeholder-[#555] focus:outline-none focus:border-[#5FBF8C]"
                   autoFocus
                 />
                 <div className="flex flex-wrap items-center gap-2">
@@ -328,12 +328,12 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
                     placeholder="Output deliverable unit (e.g. 1 signed doc)"
                     value={newTaskOutput}
                     onChange={(e) => setNewTaskOutput(e.target.value)}
-                    className="flex-1 min-w-[200px] px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] placeholder-[#555] focus:outline-none focus:border-[#C5A059]"
+                    className="flex-1 min-w-[200px] px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] placeholder-[#555] focus:outline-none focus:border-[#5FBF8C]"
                   />
                   <select
                     value={newTaskPriority}
                     onChange={(e) => setNewTaskPriority(e.target.value as any)}
-                    className="px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#808080] focus:outline-none focus:border-[#C5A059]"
+                    className="px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#808080] focus:outline-none focus:border-[#5FBF8C]"
                   >
                     <option value="high">High Priority</option>
                     <option value="medium">Medium Priority</option>
@@ -341,7 +341,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
                   </select>
                   <button
                     type="submit"
-                    className="px-4 py-2 bg-[#C5A059] hover:bg-[#D6B570] text-black text-xs uppercase tracking-widest font-semibold"
+                    className="px-4 py-2 bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black text-xs uppercase tracking-widest font-semibold"
                   >
                     Save
                   </button>
@@ -362,14 +362,14 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
                     className={`group flex items-center p-4 bg-[#111111] border transition-all cursor-pointer ${
                       task.completed
                         ? 'border-[#262626] opacity-50'
-                        : 'border-[#262626] hover:border-[#C5A059]'
+                        : 'border-[#262626] hover:border-[#5FBF8C]'
                     }`}
                   >
-                    <div className="w-4 h-4 border border-[#C5A059] mr-4 flex items-center justify-center flex-shrink-0">
+                    <div className="w-4 h-4 border border-[#5FBF8C] mr-4 flex items-center justify-center flex-shrink-0">
                       {task.completed ? (
-                        <div className="w-2.5 h-2.5 bg-[#C5A059]"></div>
+                        <div className="w-2.5 h-2.5 bg-[#5FBF8C]"></div>
                       ) : (
-                        <div className="w-2.5 h-2.5 bg-transparent group-hover:bg-[#C5A059]/30 transition-colors"></div>
+                        <div className="w-2.5 h-2.5 bg-transparent group-hover:bg-[#5FBF8C]/30 transition-colors"></div>
                       )}
                     </div>
                     <div className="flex-1 space-y-0.5">
@@ -386,7 +386,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
                             task.priority === 'high'
                               ? 'bg-[#161616] text-[#E06C75] border-[#E06C75]/40'
                               : task.priority === 'medium'
-                              ? 'bg-[#161616] text-[#C5A059] border-[#C5A059]/40'
+                              ? 'bg-[#161616] text-[#5FBF8C] border-[#5FBF8C]/40'
                               : 'bg-[#161616] text-[#808080] border-[#262626]'
                           }`}
                         >
@@ -414,9 +414,9 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
               {/* 18:00 Gratitude Scan Anchor */}
               <div
                 onClick={onOpenGratitudeScan}
-                className="flex items-start space-x-4 p-3 bg-[#161616] border border-[#262626] hover:border-[#C5A059] cursor-pointer transition-all"
+                className="flex items-start space-x-4 p-3 bg-[#161616] border border-[#262626] hover:border-[#5FBF8C] cursor-pointer transition-all"
               >
-                <div className="text-xs font-serif text-[#C5A059] mt-0.5">18:00</div>
+                <div className="text-xs font-serif text-[#5FBF8C] mt-0.5">18:00</div>
                 <div className="space-y-1 flex-1">
                   <div className="flex items-center justify-between">
                     <p className="text-sm font-medium text-[#E0E0E0]">Gratitude Scan</p>
@@ -428,7 +428,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
                     4 Questions • Protected Block
                   </p>
                   {todayScan?.q4ProofAction && (
-                    <p className="text-[11px] text-[#C5A059] italic truncate">
+                    <p className="text-[11px] text-[#5FBF8C] italic truncate">
                       Proof: &ldquo;{todayScan.q4ProofAction}&rdquo;
                     </p>
                   )}
@@ -438,7 +438,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
               {/* 20:20 Evening Protocol Anchor */}
               <div
                 onClick={onOpenDailyJournal}
-                className="flex items-start space-x-4 p-3 bg-[#161616] border border-[#262626] hover:border-[#C5A059] cursor-pointer transition-all"
+                className="flex items-start space-x-4 p-3 bg-[#161616] border border-[#262626] hover:border-[#5FBF8C] cursor-pointer transition-all"
               >
                 <div className="text-xs font-serif text-[#808080] mt-0.5">20:20</div>
                 <div className="space-y-1 flex-1">
@@ -458,7 +458,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
 
           {/* Card: Identity Horizon */}
           <div className="p-6 bg-[#161616] border border-[#262626] space-y-4">
-            <h3 className="font-serif text-sm uppercase tracking-widest text-[#C5A059]">Identity Horizon</h3>
+            <h3 className="font-serif text-sm uppercase tracking-widest text-[#5FBF8C]">Identity Horizon</h3>
             
             <div className="space-y-4">
               <div>
@@ -474,7 +474,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
                   {appState.monthlyRoleGoals.slice(0, 3).map((role, idx) => (
                     <li key={role.id} className="flex items-center justify-between text-[#E0E0E0]">
                       <span>• {role.roleName}</span>
-                      <span className="text-[#C5A059] font-mono text-[11px]">
+                      <span className="text-[#5FBF8C] font-mono text-[11px]">
                         {role.currentOutputCount}/{role.targetOutputCount} {role.outputLabel}
                       </span>
                     </li>
@@ -486,15 +486,15 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
 
           {/* Card: State Interventions & Monastic AI */}
           <div className="p-6 bg-[#111111] border border-[#262626] space-y-3">
-            <h3 className="font-serif text-sm uppercase tracking-widest text-[#C5A059]">Intervention Protocols</h3>
+            <h3 className="font-serif text-sm uppercase tracking-widest text-[#5FBF8C]">Intervention Protocols</h3>
             
             <div className="grid grid-cols-2 gap-2.5">
               <button
                 id="dash-open-intervention-btn"
                 onClick={onOpenIntervention}
-                className="p-3 bg-[#161616] hover:bg-[#202020] border border-[#262626] hover:border-[#C5A059] text-left transition-all group"
+                className="p-3 bg-[#161616] hover:bg-[#202020] border border-[#262626] hover:border-[#5FBF8C] text-left transition-all group"
               >
-                <div className="text-xs font-semibold text-[#E0E0E0] group-hover:text-[#C5A059]">
+                <div className="text-xs font-semibold text-[#E0E0E0] group-hover:text-[#5FBF8C]">
                   Interpretation
                 </div>
                 <div className="text-[10px] text-[#808080] mt-1">
@@ -505,9 +505,9 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
               <button
                 id="dash-open-access-protocol-btn"
                 onClick={onOpenAccessProtocol}
-                className="p-3 bg-[#161616] hover:bg-[#202020] border border-[#262626] hover:border-[#C5A059] text-left transition-all group"
+                className="p-3 bg-[#161616] hover:bg-[#202020] border border-[#262626] hover:border-[#5FBF8C] text-left transition-all group"
               >
-                <div className="text-xs font-semibold text-[#E0E0E0] group-hover:text-[#C5A059]">
+                <div className="text-xs font-semibold text-[#E0E0E0] group-hover:text-[#5FBF8C]">
                   Access Reset
                 </div>
                 <div className="text-[10px] text-[#808080] mt-1">
@@ -518,9 +518,9 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
 
             <button
               onClick={onOpenAiSteward}
-              className="w-full py-2.5 px-3 bg-[#161616] hover:bg-[#222222] border border-[#262626] hover:border-[#C5A059] text-[#C5A059] text-xs uppercase tracking-widest font-semibold flex items-center justify-center gap-2 transition-all mt-2"
+              className="w-full py-2.5 px-3 bg-[#161616] hover:bg-[#222222] border border-[#262626] hover:border-[#5FBF8C] text-[#5FBF8C] text-xs uppercase tracking-widest font-semibold flex items-center justify-center gap-2 transition-all mt-2"
             >
-              <Bot className="w-4 h-4 text-[#C5A059]" />
+              <Bot className="w-4 h-4 text-[#5FBF8C]" />
               <span>Consult AI Steward</span>
             </button>
           </div>

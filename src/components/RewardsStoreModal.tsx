@@ -61,10 +61,10 @@ export const RewardsStoreModal: React.FC<RewardsStoreModalProps> = ({
         <div className="flex items-start justify-between gap-4 border-b border-[#262626] pb-4">
           <div className="space-y-1">
             <div className="flex items-center gap-2">
-              <span className="p-1 bg-[#161616] text-[#C5A059] border border-[#262626]">
+              <span className="p-1 bg-[#161616] text-[#5FBF8C] border border-[#262626]">
                 <Coins className="w-3.5 h-3.5" />
               </span>
-              <span className="text-[10px] uppercase font-mono tracking-widest text-[#C5A059]">
+              <span className="text-[10px] uppercase font-mono tracking-widest text-[#5FBF8C]">
                 Controlled Leisure Economy
               </span>
             </div>
@@ -87,7 +87,7 @@ export const RewardsStoreModal: React.FC<RewardsStoreModalProps> = ({
         {/* Current Balance Card */}
         <div className="p-4 bg-[#161616] border border-[#262626] flex items-center justify-between">
           <div>
-            <span className="text-[10px] uppercase font-mono tracking-widest text-[#C5A059] block">Available Balance</span>
+            <span className="text-[10px] uppercase font-mono tracking-widest text-[#5FBF8C] block">Available Balance</span>
             <div className="text-2xl sm:text-3xl font-mono text-[#E0E0E0] mt-0.5">
               {appState.stewardPoints} <span className="text-xs font-normal text-[#808080] font-sans">pts</span>
             </div>
@@ -108,7 +108,7 @@ export const RewardsStoreModal: React.FC<RewardsStoreModalProps> = ({
             </span>
             <button
               onClick={() => setShowAddForm(!showAddForm)}
-              className="text-xs text-[#C5A059] hover:text-[#D6B570] font-mono flex items-center gap-1"
+              className="text-xs text-[#5FBF8C] hover:text-[#7FD1A6] font-mono flex items-center gap-1"
             >
               <Plus className="w-3 h-3" />
               <span>Add Custom Reward</span>
@@ -126,7 +126,7 @@ export const RewardsStoreModal: React.FC<RewardsStoreModalProps> = ({
                     placeholder="e.g. 45m Strategy Video Game"
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
-                    className="w-full px-3 py-1.5 bg-[#111111] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059]"
+                    className="w-full px-3 py-1.5 bg-[#111111] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C]"
                     required
                   />
                 </div>
@@ -136,7 +136,7 @@ export const RewardsStoreModal: React.FC<RewardsStoreModalProps> = ({
                     type="number"
                     value={pointCost}
                     onChange={(e) => setPointCost(Number(e.target.value))}
-                    className="w-full px-3 py-1.5 bg-[#111111] border border-[#262626] text-xs text-[#E0E0E0] font-mono focus:outline-none focus:border-[#C5A059]"
+                    className="w-full px-3 py-1.5 bg-[#111111] border border-[#262626] text-xs text-[#E0E0E0] font-mono focus:outline-none focus:border-[#5FBF8C]"
                     required
                   />
                 </div>
@@ -152,7 +152,7 @@ export const RewardsStoreModal: React.FC<RewardsStoreModalProps> = ({
                 </button>
                 <button
                   type="submit"
-                  className="px-4 py-1 bg-[#C5A059] hover:bg-[#D6B570] text-black text-xs uppercase tracking-widest font-semibold"
+                  className="px-4 py-1 bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black text-xs uppercase tracking-widest font-semibold"
                 >
                   Create Pass
                 </button>
@@ -180,7 +180,7 @@ export const RewardsStoreModal: React.FC<RewardsStoreModalProps> = ({
                         </span>
                       )}
                     </div>
-                    <div className="text-[10px] font-mono text-[#C5A059]">
+                    <div className="text-[10px] font-mono text-[#5FBF8C]">
                       Cost: {reward.pointCost} pts
                     </div>
                   </div>
@@ -196,7 +196,7 @@ export const RewardsStoreModal: React.FC<RewardsStoreModalProps> = ({
                     disabled={!canAfford}
                     className={`px-4 py-1.5 text-xs font-semibold uppercase tracking-widest transition-all ${
                       canAfford
-                        ? 'bg-[#C5A059] hover:bg-[#D6B570] text-black shadow-sm'
+                        ? 'bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black shadow-sm'
                         : 'bg-[#161616] border border-[#262626] text-[#555] cursor-not-allowed'
                     }`}
                   >

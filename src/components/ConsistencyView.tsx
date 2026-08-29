@@ -77,7 +77,7 @@ export const ConsistencyView: React.FC<ConsistencyViewProps> = ({
       <div className="bg-[#111111] border border-[#262626] p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div>
           <div className="flex items-center gap-2">
-            <span className="text-[10px] uppercase font-mono tracking-widest px-2 py-0.5 bg-[#161616] text-[#C5A059] border border-[#262626]">
+            <span className="text-[10px] uppercase font-mono tracking-widest px-2 py-0.5 bg-[#161616] text-[#5FBF8C] border border-[#262626]">
               Empirical Auditing
             </span>
           </div>
@@ -95,14 +95,14 @@ export const ConsistencyView: React.FC<ConsistencyViewProps> = ({
             onClick={() => setShowLogModal(true)}
             className="px-4 py-2.5 bg-[#161616] hover:bg-[#222222] text-[#E0E0E0] border border-[#262626] text-xs font-semibold uppercase tracking-widest flex items-center gap-2 transition-all"
           >
-            <AlertTriangle className="w-4 h-4 text-[#C5A059]" />
+            <AlertTriangle className="w-4 h-4 text-[#5FBF8C]" />
             <span>Log Break</span>
           </button>
 
           <button
             id="trigger-recovery-from-consistency-btn"
             onClick={() => onOpenRecovery()}
-            className="px-5 py-2.5 bg-[#C5A059] hover:bg-[#D6B570] text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-2 transition-all shadow-sm"
+            className="px-5 py-2.5 bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-2 transition-all shadow-sm"
           >
             <Zap className="w-4 h-4" />
             <span>Recovery</span>
@@ -115,7 +115,7 @@ export const ConsistencyView: React.FC<ConsistencyViewProps> = ({
         {/* Thinking Loop */}
         <div className="bg-[#111111] border border-[#262626] p-6 space-y-3">
           <div className="flex items-center justify-between">
-            <span className="text-xs uppercase tracking-widest font-serif text-[#C5A059]">
+            <span className="text-xs uppercase tracking-widest font-serif text-[#5FBF8C]">
               Thinking Loop
             </span>
             <span className="text-[10px] font-mono px-2 py-0.5 bg-[#0A0A0A] text-[#808080] border border-[#262626]">
@@ -126,14 +126,14 @@ export const ConsistencyView: React.FC<ConsistencyViewProps> = ({
             <strong className="text-[#E0E0E0]">Symptom:</strong> Over-analyzing, endless research, system tweaking, or philosophical speculation that substitutes for shipping output units.
           </p>
           <div className="p-3 bg-[#161616] text-[11px] text-[#808080] border border-[#262626]">
-            <strong className="text-[#C5A059]">Antidote:</strong> Set a 10-minute timer. Write 1 ugly paragraph or commit 1 simple line. Action precedes clarity.
+            <strong className="text-[#5FBF8C]">Antidote:</strong> Set a 10-minute timer. Write 1 ugly paragraph or commit 1 simple line. Action precedes clarity.
           </div>
         </div>
 
         {/* Motivation Loop */}
         <div className="bg-[#111111] border border-[#262626] p-6 space-y-3">
           <div className="flex items-center justify-between">
-            <span className="text-xs uppercase tracking-widest font-serif text-[#C5A059]">
+            <span className="text-xs uppercase tracking-widest font-serif text-[#5FBF8C]">
               Motivation Loop
             </span>
             <span className="text-[10px] font-mono px-2 py-0.5 bg-[#0A0A0A] text-[#808080] border border-[#262626]">
@@ -144,14 +144,14 @@ export const ConsistencyView: React.FC<ConsistencyViewProps> = ({
             <strong className="text-[#E0E0E0]">Symptom:</strong> Waiting to &ldquo;feel like it&rdquo;, demanding emotional inspiration or ideal environmental conditions before engaging.
           </p>
           <div className="p-3 bg-[#161616] text-[11px] text-[#808080] border border-[#262626]">
-            <strong className="text-[#C5A059]">Antidote:</strong> Disconnect mood from execution. Fulfill the Minimum Viable Action (MVA) in complete somatic neutrality.
+            <strong className="text-[#5FBF8C]">Antidote:</strong> Disconnect mood from execution. Fulfill the Minimum Viable Action (MVA) in complete somatic neutrality.
           </div>
         </div>
 
         {/* Reset Loop */}
         <div className="bg-[#111111] border border-[#262626] p-6 space-y-3">
           <div className="flex items-center justify-between">
-            <span className="text-xs uppercase tracking-widest font-serif text-[#C5A059]">
+            <span className="text-xs uppercase tracking-widest font-serif text-[#5FBF8C]">
               Reset Loop
             </span>
             <span className="text-[10px] font-mono px-2 py-0.5 bg-[#0A0A0A] text-[#808080] border border-[#262626]">
@@ -162,7 +162,7 @@ export const ConsistencyView: React.FC<ConsistencyViewProps> = ({
             <strong className="text-[#E0E0E0]">Symptom:</strong> Declaring a day or week &ldquo;ruined&rdquo; after a slip and waiting for Monday, tomorrow, or a clean slate to restart.
           </p>
           <div className="p-3 bg-[#161616] text-[11px] text-[#808080] border border-[#262626]">
-            <strong className="text-[#C5A059]">Antidote:</strong> Instant micro-recovery within 120 seconds. Never postpone recovery to a future arbitrary date.
+            <strong className="text-[#5FBF8C]">Antidote:</strong> Instant micro-recovery within 120 seconds. Never postpone recovery to a future arbitrary date.
           </div>
         </div>
       </div>
@@ -172,7 +172,7 @@ export const ConsistencyView: React.FC<ConsistencyViewProps> = ({
         <div className="flex items-center justify-between">
           <div>
             <h2 className="text-lg font-serif text-[#E0E0E0] flex items-center gap-2">
-              <Flame className="w-4 h-4 text-[#C5A059]" />
+              <Flame className="w-4 h-4 text-[#5FBF8C]" />
               28-Day Never-Zero Continuity Wire
             </h2>
             <p className="text-xs text-[#808080] mt-1 font-serif italic">
@@ -180,7 +180,7 @@ export const ConsistencyView: React.FC<ConsistencyViewProps> = ({
             </p>
           </div>
           <div className="text-right">
-            <div className="text-xl font-serif text-[#C5A059]">
+            <div className="text-xl font-serif text-[#5FBF8C]">
               {appState.currentStreakNeverZero} Days Streak
             </div>
             <div className="text-[10px] text-[#808080] font-mono uppercase tracking-widest">
@@ -204,15 +204,15 @@ export const ConsistencyView: React.FC<ConsistencyViewProps> = ({
                 <div
                   className={`w-full aspect-square border transition-all ${
                     d.isToday
-                      ? 'ring-1 ring-[#C5A059] ring-offset-1 ring-offset-black'
+                      ? 'ring-1 ring-[#5FBF8C] ring-offset-1 ring-offset-black'
                       : ''
                   } ${
                     score >= 90
                       ? 'bg-[#6BBF8E] border-[#6BBF8E]'
                       : score >= 50
-                      ? 'bg-[#C5A059] border-[#C5A059]'
+                      ? 'bg-[#5FBF8C] border-[#5FBF8C]'
                       : isNeverZero
-                      ? 'bg-[#8F7038] border-[#8F7038]'
+                      ? 'bg-[#3B8F65] border-[#3B8F65]'
                       : hasData
                       ? 'bg-[#E06C75] border-[#E06C75]'
                       : 'bg-[#0A0A0A] border-[#262626]'
@@ -233,7 +233,7 @@ export const ConsistencyView: React.FC<ConsistencyViewProps> = ({
               <span className="w-2.5 h-2.5 bg-[#6BBF8E] inline-block" /> Full Execution (90-100%)
             </span>
             <span className="flex items-center gap-2">
-              <span className="w-2.5 h-2.5 bg-[#C5A059] inline-block" /> MVA / Partial
+              <span className="w-2.5 h-2.5 bg-[#5FBF8C] inline-block" /> MVA / Partial
             </span>
             <span className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 bg-[#0A0A0A] border border-[#262626] inline-block" /> Pending / Rest
@@ -266,7 +266,7 @@ export const ConsistencyView: React.FC<ConsistencyViewProps> = ({
               >
                 <div className="flex items-center justify-between gap-2">
                   <div className="flex items-center gap-2">
-                    <span className="text-[10px] uppercase font-mono px-2 py-0.5 bg-[#0A0A0A] text-[#C5A059] border border-[#262626]">
+                    <span className="text-[10px] uppercase font-mono px-2 py-0.5 bg-[#0A0A0A] text-[#5FBF8C] border border-[#262626]">
                       {log.loopType}
                     </span>
                     <span className="text-[10px] font-mono text-[#808080]">{log.date}</span>
@@ -323,7 +323,7 @@ export const ConsistencyView: React.FC<ConsistencyViewProps> = ({
                   placeholder="e.g. Felt uncertain about API response format and procrastinated"
                   value={trigger}
                   onChange={(e) => setTrigger(e.target.value)}
-                  className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059]"
+                  className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C]"
                   required
                 />
               </div>
@@ -335,20 +335,20 @@ export const ConsistencyView: React.FC<ConsistencyViewProps> = ({
                   placeholder="e.g. Spent 45 minutes reading news tabs instead of typing code"
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
-                  className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059]"
+                  className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C]"
                 />
               </div>
 
               <div>
                 <label className="text-[10px] uppercase tracking-widest text-[#808080] block mb-1">
-                  Immediate Zero-Debt Recovery Action Taken <span className="text-[#C5A059]">*</span>
+                  Immediate Zero-Debt Recovery Action Taken <span className="text-[#5FBF8C]">*</span>
                 </label>
                 <input
                   type="text"
                   placeholder="e.g. Wrote 1 function and committed to git within 5 min"
                   value={recoveryActionTaken}
                   onChange={(e) => setRecoveryActionTaken(e.target.value)}
-                  className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059]"
+                  className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C]"
                   required
                 />
               </div>
@@ -363,7 +363,7 @@ export const ConsistencyView: React.FC<ConsistencyViewProps> = ({
                 </button>
                 <button
                   type="submit"
-                  className="px-5 py-2 bg-[#C5A059] hover:bg-[#D6B570] text-black text-xs uppercase tracking-widest font-semibold"
+                  className="px-5 py-2 bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black text-xs uppercase tracking-widest font-semibold"
                 >
                   Save Log
                 </button>

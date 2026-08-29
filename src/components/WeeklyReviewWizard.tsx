@@ -127,10 +127,10 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
         <div className="flex items-start justify-between gap-4 border-b border-[#262626] pb-4">
           <div className="space-y-1">
             <div className="flex items-center gap-2">
-              <span className="p-1 bg-[#161616] text-[#C5A059] border border-[#262626]">
+              <span className="p-1 bg-[#161616] text-[#5FBF8C] border border-[#262626]">
                 <Calendar className="w-3.5 h-3.5" />
               </span>
-              <span className="text-[10px] uppercase font-mono tracking-widest text-[#C5A059]">
+              <span className="text-[10px] uppercase font-mono tracking-widest text-[#5FBF8C]">
                 Sunday Monastic Protocol
               </span>
             </div>
@@ -165,7 +165,7 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
               onClick={() => setCurrentBlock(b.n)}
               className={`p-2 text-center border transition-all ${
                 currentBlock === b.n
-                  ? 'bg-[#C5A059] text-black font-semibold border-[#C5A059]'
+                  ? 'bg-[#5FBF8C] text-black font-semibold border-[#5FBF8C]'
                   : currentBlock > b.n
                   ? 'bg-[#161616] text-[#E0E0E0] border-[#262626]'
                   : 'bg-[#0A0A0A] text-[#555] border-[#262626]'
@@ -181,7 +181,7 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
         {currentBlock === 1 && (
           <div className="space-y-4">
             <div className="space-y-1">
-              <span className="text-[10px] uppercase font-mono tracking-widest text-[#C5A059]">
+              <span className="text-[10px] uppercase font-mono tracking-widest text-[#5FBF8C]">
                 Block 1: Output Units Audit
               </span>
               <h3 className="text-sm font-serif text-[#E0E0E0]">
@@ -222,7 +222,7 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
                             },
                           })
                         }
-                        className="w-full px-2.5 py-1 bg-[#111111] border border-[#262626] text-xs text-[#E0E0E0] font-mono focus:outline-none focus:border-[#C5A059]"
+                        className="w-full px-2.5 py-1 bg-[#111111] border border-[#262626] text-xs text-[#E0E0E0] font-mono focus:outline-none focus:border-[#5FBF8C]"
                       />
                     </div>
                     <div>
@@ -239,7 +239,7 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
                             },
                           })
                         }
-                        className="w-full px-2.5 py-1 bg-[#111111] border border-[#262626] text-xs text-[#E0E0E0] font-mono focus:outline-none focus:border-[#C5A059]"
+                        className="w-full px-2.5 py-1 bg-[#111111] border border-[#262626] text-xs text-[#E0E0E0] font-mono focus:outline-none focus:border-[#5FBF8C]"
                       />
                     </div>
                   </div>
@@ -251,7 +251,7 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
               <button
                 type="button"
                 onClick={() => setCurrentBlock(2)}
-                className="px-5 py-2 bg-[#C5A059] hover:bg-[#D6B570] text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5"
+                className="px-5 py-2 bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5"
               >
                 <span>Proceed to Loops Audit</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -264,7 +264,7 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
         {currentBlock === 2 && (
           <div className="space-y-4">
             <div className="space-y-1">
-              <span className="text-[10px] uppercase font-mono tracking-widest text-[#C5A059]">
+              <span className="text-[10px] uppercase font-mono tracking-widest text-[#5FBF8C]">
                 Block 2: Failure Patterns Audit
               </span>
               <h3 className="text-sm font-serif text-[#E0E0E0]">
@@ -280,7 +280,7 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
                   onClick={() => setDominantLoop(loop)}
                   className={`p-3 border text-left transition-all ${
                     dominantLoop === loop
-                      ? 'bg-[#161616] border-[#C5A059] text-[#C5A059] font-serif'
+                      ? 'bg-[#161616] border-[#5FBF8C] text-[#5FBF8C] font-serif'
                       : 'bg-[#0A0A0A] border-[#262626] text-[#808080] font-serif hover:text-[#E0E0E0]'
                   }`}
                 >
@@ -296,7 +296,7 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
                 value={loopAnalysis}
                 onChange={(e) => setLoopAnalysis(e.target.value)}
                 placeholder="Detail the exact friction points and unconscious moments..."
-                className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] placeholder-[#555] focus:outline-none focus:border-[#C5A059]"
+                className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] placeholder-[#555] focus:outline-none focus:border-[#5FBF8C]"
               />
             </div>
 
@@ -311,7 +311,7 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
               <button
                 type="button"
                 onClick={() => setCurrentBlock(3)}
-                className="px-5 py-2 bg-[#C5A059] hover:bg-[#D6B570] text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5"
+                className="px-5 py-2 bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5"
               >
                 <span>Proceed to Single Adjustment</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -324,7 +324,7 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
         {currentBlock === 3 && (
           <div className="space-y-4">
             <div className="space-y-1">
-              <span className="text-[10px] uppercase font-mono tracking-widest text-[#C5A059]">
+              <span className="text-[10px] uppercase font-mono tracking-widest text-[#5FBF8C]">
                 Block 3: The Single Adjustment Rule
               </span>
               <h3 className="text-sm font-serif text-[#E0E0E0]">
@@ -336,7 +336,7 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
             </div>
 
             <div className="p-4 bg-[#161616] border border-[#262626] space-y-2">
-              <label className="text-xs font-serif text-[#C5A059] block">
+              <label className="text-xs font-serif text-[#5FBF8C] block">
                 The Single Operational Adjustment for Next Week:
               </label>
               <input
@@ -344,7 +344,7 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
                 value={singleAdjustment}
                 onChange={(e) => setSingleAdjustment(e.target.value)}
                 placeholder="e.g. Leave smartphone in kitchen charger during 08:30–11:00 deep work block"
-                className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#C5A059]/60 text-xs text-[#E0E0E0] focus:outline-none focus:border-[#C5A059] font-mono"
+                className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#5FBF8C]/60 text-xs text-[#E0E0E0] focus:outline-none focus:border-[#5FBF8C] font-mono"
                 required
                 autoFocus
               />
@@ -362,7 +362,7 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
                 type="button"
                 onClick={() => setCurrentBlock(4)}
                 disabled={!singleAdjustment.trim()}
-                className="px-5 py-2 bg-[#C5A059] hover:bg-[#D6B570] disabled:opacity-40 text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5"
+                className="px-5 py-2 bg-[#5FBF8C] hover:bg-[#7FD1A6] disabled:opacity-40 text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5"
               >
                 <span>Proceed to Identity Calibration</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -375,7 +375,7 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
         {currentBlock === 4 && (
           <div className="space-y-4">
             <div className="space-y-1">
-              <span className="text-[10px] uppercase font-mono tracking-widest text-[#C5A059]">
+              <span className="text-[10px] uppercase font-mono tracking-widest text-[#5FBF8C]">
                 Block 4: Identity & Gratitude Synthesis
               </span>
               <h3 className="text-sm font-serif text-[#E0E0E0]">
@@ -390,7 +390,7 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
                 value={weeklyGratitude}
                 onChange={(e) => setWeeklyGratitude(e.target.value)}
                 placeholder="One concrete blessing from this week that was not guaranteed..."
-                className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] placeholder-[#555] focus:outline-none focus:border-[#C5A059]"
+                className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] placeholder-[#555] focus:outline-none focus:border-[#5FBF8C]"
               />
             </div>
 
@@ -400,7 +400,7 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
                 rows={2}
                 value={funeralIdentityAlignment}
                 onChange={(e) => setFuneralIdentityAlignment(e.target.value)}
-                className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] placeholder-[#555] focus:outline-none focus:border-[#C5A059]"
+                className="w-full px-3 py-2 bg-[#0A0A0A] border border-[#262626] text-xs text-[#E0E0E0] placeholder-[#555] focus:outline-none focus:border-[#5FBF8C]"
               />
             </div>
 
@@ -415,7 +415,7 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
               <button
                 type="button"
                 onClick={() => setCurrentBlock(5)}
-                className="px-5 py-2 bg-[#C5A059] hover:bg-[#D6B570] text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5"
+                className="px-5 py-2 bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5"
               >
                 <span>Proceed to AI Diagnosis</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -428,7 +428,7 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
         {currentBlock === 5 && (
           <div className="space-y-4">
             <div className="space-y-1">
-              <span className="text-[10px] uppercase font-mono tracking-widest text-[#C5A059]">
+              <span className="text-[10px] uppercase font-mono tracking-widest text-[#5FBF8C]">
                 Block 5: AI Steward Audit & Synthesis
               </span>
               <h3 className="text-sm font-serif text-[#E0E0E0]">
@@ -438,7 +438,7 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
 
             <div className="p-4 bg-[#0A0A0A] border border-[#262626] space-y-3">
               <div className="flex items-center justify-between">
-                <span className="text-xs font-serif text-[#C5A059] flex items-center gap-1.5">
+                <span className="text-xs font-serif text-[#5FBF8C] flex items-center gap-1.5">
                   <Bot className="w-4 h-4" />
                   Steward AI Diagnostic Engine
                 </span>
@@ -449,7 +449,7 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
                   disabled={isAiLoading}
                   className="px-3.5 py-1.5 bg-[#161616] hover:bg-[#222222] border border-[#262626] text-[#E0E0E0] text-[10px] uppercase tracking-widest font-semibold flex items-center gap-1.5"
                 >
-                  {isAiLoading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Sparkles className="w-3.5 h-3.5 text-[#C5A059]" />}
+                  {isAiLoading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Sparkles className="w-3.5 h-3.5 text-[#5FBF8C]" />}
                   <span>Run Analysis</span>
                 </button>
               </div>
@@ -459,7 +459,7 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
                   <div className="text-[#E0E0E0] font-serif">
                     <strong>Pattern Diagnosis:</strong> {aiReport.diagnosis}
                   </div>
-                  <div className="text-[#C5A059] font-serif">
+                  <div className="text-[#5FBF8C] font-serif">
                     <strong>Single Adjustment Validation:</strong> {aiReport.singleAdjustmentValidation}
                   </div>
                   {aiReport.calmEncouragement && (
@@ -487,7 +487,7 @@ export const WeeklyReviewWizard: React.FC<WeeklyReviewWizardProps> = ({
                 type="button"
                 id="finalize-weekly-review-btn"
                 onClick={handleFinalize}
-                className="px-5 py-2 bg-[#C5A059] hover:bg-[#D6B570] text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5 shadow-sm"
+                className="px-5 py-2 bg-[#5FBF8C] hover:bg-[#7FD1A6] text-black text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5 shadow-sm"
               >
                 <CheckCircle2 className="w-4 h-4" />
                 <span>Finalize & Lock Review</span>

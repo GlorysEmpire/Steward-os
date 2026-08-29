@@ -79,7 +79,7 @@ export const Navigation: React.FC<NavigationProps> = ({
       {/* Top Banner for Protected Block Alerts */}
       <div className="bg-[#0F0F0F] border-b border-[#262626] px-4 sm:px-6 py-1.5 text-xs text-[#808080] flex flex-wrap items-center justify-between gap-2">
         <div className="flex items-center gap-3">
-          <span className="flex items-center gap-1.5 font-mono text-[#C5A059] font-medium text-[11px] tracking-wide">
+          <span className="flex items-center gap-1.5 font-mono text-[#5FBF8C] font-medium text-[11px] tracking-wide">
             <Clock className="w-3.5 h-3.5" />
             {timeStr}
           </span>
@@ -87,14 +87,14 @@ export const Navigation: React.FC<NavigationProps> = ({
           <span className="text-[#A3A3A3] text-[11px]">
             {minToScan > 0 ? (
               <span>
-                Gratitude Scan (18:00): in <strong className="text-[#C5A059] font-semibold">{minToScan}m</strong>
+                Gratitude Scan (18:00): in <strong className="text-[#5FBF8C] font-semibold">{minToScan}m</strong>
               </span>
             ) : scanDone ? (
               <span className="text-[#6BBF8E] flex items-center gap-1">
                 <CheckCircle2 className="w-3 h-3 inline" /> 18:00 Scan Done
               </span>
             ) : (
-              <span className="text-[#C5A059] font-semibold animate-pulse">
+              <span className="text-[#5FBF8C] font-semibold animate-pulse">
                 18:00 Gratitude Scan Window Active
               </span>
             )}
@@ -103,7 +103,7 @@ export const Navigation: React.FC<NavigationProps> = ({
           <span className="text-[#A3A3A3] text-[11px]">
             {minToStop > 0 ? (
               <span>
-                Evening Hard Stop (20:20): in <strong className="text-[#C5A059] font-semibold">{minToStop}m</strong>
+                Evening Hard Stop (20:20): in <strong className="text-[#5FBF8C] font-semibold">{minToStop}m</strong>
               </span>
             ) : (
               <span className="text-[#E06C75] font-semibold">
@@ -116,8 +116,8 @@ export const Navigation: React.FC<NavigationProps> = ({
         {/* Single Adjustment active banner */}
         {activeSingleAdjustment && (
           <div className="hidden lg:flex items-center gap-2 bg-[#161616] border border-[#333] px-3 py-0.5 rounded text-[11px] text-[#E0E0E0]">
-            <span className="text-[#C5A059] font-serif font-bold uppercase tracking-widest text-[9px]">Single Adjustment:</span>
-            <span className="truncate max-w-xs italic font-serif text-[#C5A059]">&ldquo;{activeSingleAdjustment}&rdquo;</span>
+            <span className="text-[#5FBF8C] font-serif font-bold uppercase tracking-widest text-[9px]">Single Adjustment:</span>
+            <span className="truncate max-w-xs italic font-serif text-[#5FBF8C]">&ldquo;{activeSingleAdjustment}&rdquo;</span>
           </div>
         )}
 
@@ -126,10 +126,10 @@ export const Navigation: React.FC<NavigationProps> = ({
           <button
             id="nav-rewards-btn"
             onClick={onOpenRewards}
-            className="flex items-center gap-1.5 px-3 py-0.5 rounded text-[11px] font-mono text-[#C5A059] bg-[#161616] hover:bg-[#202020] border border-[#262626] hover:border-[#C5A059]/50 transition-colors shadow-sm"
+            className="flex items-center gap-1.5 px-3 py-0.5 rounded text-[11px] font-mono text-[#5FBF8C] bg-[#161616] hover:bg-[#202020] border border-[#262626] hover:border-[#5FBF8C]/50 transition-colors shadow-sm"
             title="Steward Points & Screen/Game Time Ledger"
           >
-            <Coins className="w-3 h-3 text-[#C5A059]" />
+            <Coins className="w-3 h-3 text-[#5FBF8C]" />
             <span>{appState.stewardPoints} pts</span>
           </button>
         </div>
@@ -142,13 +142,13 @@ export const Navigation: React.FC<NavigationProps> = ({
           onClick={() => onSelectTab('dashboard')}
           className="flex items-center gap-3 cursor-pointer group"
         >
-          <div className="w-9 h-9 rounded bg-[#161616] border border-[#262626] flex items-center justify-center shadow-inner group-hover:border-[#C5A059] transition-all">
-            <Shield className="w-4 h-4 text-[#C5A059]" />
+          <div className="w-9 h-9 rounded bg-[#161616] border border-[#262626] flex items-center justify-center shadow-inner group-hover:border-[#5FBF8C] transition-all">
+            <Shield className="w-4 h-4 text-[#5FBF8C]" />
           </div>
           <div>
             <div className="flex items-center gap-2">
               <span className="font-serif text-xl font-bold tracking-tight text-[#E0E0E0] group-hover:text-white transition-colors">
-                Steward<span className="text-[#C5A059]">OS</span>
+                Steward<span className="text-[#5FBF8C]">OS</span>
               </span>
               <span className="text-[9px] uppercase tracking-widest px-1.5 py-0.5 rounded bg-[#161616] text-[#808080] border border-[#262626]">
                 Personal OS
@@ -167,11 +167,11 @@ export const Navigation: React.FC<NavigationProps> = ({
             onClick={() => onSelectTab('dashboard')}
             className={`flex items-center gap-2 px-3.5 py-1.5 rounded text-xs font-medium transition-all ${
               activeTab === 'dashboard'
-                ? 'bg-[#1C1C1C] text-[#C5A059] border border-[#C5A059]/40 shadow-sm'
+                ? 'bg-[#1C1C1C] text-[#5FBF8C] border border-[#5FBF8C]/40 shadow-sm'
                 : 'text-[#808080] hover:text-white hover:bg-[#161616]'
             }`}
           >
-            <div className={`w-1.5 h-1.5 rounded-full ${activeTab === 'dashboard' ? 'bg-[#C5A059]' : 'bg-[#444]'}`} />
+            <div className={`w-1.5 h-1.5 rounded-full ${activeTab === 'dashboard' ? 'bg-[#5FBF8C]' : 'bg-[#444]'}`} />
             <span>Daily Baseline</span>
           </button>
 
@@ -180,7 +180,7 @@ export const Navigation: React.FC<NavigationProps> = ({
             onClick={() => onSelectTab('routines')}
             className={`flex items-center gap-2 px-3.5 py-1.5 rounded text-xs font-medium transition-all ${
               activeTab === 'routines'
-                ? 'bg-[#1C1C1C] text-[#C5A059] border border-[#C5A059]/40 shadow-sm'
+                ? 'bg-[#1C1C1C] text-[#5FBF8C] border border-[#5FBF8C]/40 shadow-sm'
                 : 'text-[#808080] hover:text-white hover:bg-[#161616]'
             }`}
           >
@@ -193,7 +193,7 @@ export const Navigation: React.FC<NavigationProps> = ({
             onClick={() => onSelectTab('agenda')}
             className={`flex items-center gap-2 px-3.5 py-1.5 rounded text-xs font-medium transition-all ${
               activeTab === 'agenda'
-                ? 'bg-[#1C1C1C] text-[#C5A059] border border-[#C5A059]/40 shadow-sm'
+                ? 'bg-[#1C1C1C] text-[#5FBF8C] border border-[#5FBF8C]/40 shadow-sm'
                 : 'text-[#808080] hover:text-white hover:bg-[#161616]'
             }`}
           >
@@ -206,7 +206,7 @@ export const Navigation: React.FC<NavigationProps> = ({
             onClick={() => onSelectTab('goals')}
             className={`flex items-center gap-2 px-3.5 py-1.5 rounded text-xs font-medium transition-all ${
               activeTab === 'goals'
-                ? 'bg-[#1C1C1C] text-[#C5A059] border border-[#C5A059]/40 shadow-sm'
+                ? 'bg-[#1C1C1C] text-[#5FBF8C] border border-[#5FBF8C]/40 shadow-sm'
                 : 'text-[#808080] hover:text-white hover:bg-[#161616]'
             }`}
           >
@@ -219,7 +219,7 @@ export const Navigation: React.FC<NavigationProps> = ({
             onClick={() => onSelectTab('consistency')}
             className={`flex items-center gap-2 px-3.5 py-1.5 rounded text-xs font-medium transition-all ${
               activeTab === 'consistency'
-                ? 'bg-[#1C1C1C] text-[#C5A059] border border-[#C5A059]/40 shadow-sm'
+                ? 'bg-[#1C1C1C] text-[#5FBF8C] border border-[#5FBF8C]/40 shadow-sm'
                 : 'text-[#808080] hover:text-white hover:bg-[#161616]'
             }`}
           >
@@ -232,7 +232,7 @@ export const Navigation: React.FC<NavigationProps> = ({
             onClick={() => onSelectTab('reviews')}
             className={`flex items-center gap-2 px-3.5 py-1.5 rounded text-xs font-medium transition-all ${
               activeTab === 'reviews'
-                ? 'bg-[#1C1C1C] text-[#C5A059] border border-[#C5A059]/40 shadow-sm'
+                ? 'bg-[#1C1C1C] text-[#5FBF8C] border border-[#5FBF8C]/40 shadow-sm'
                 : 'text-[#808080] hover:text-white hover:bg-[#161616]'
             }`}
           >
@@ -247,10 +247,10 @@ export const Navigation: React.FC<NavigationProps> = ({
           <button
             id="nav-open-ai-steward"
             onClick={onOpenAiSteward}
-            className="flex items-center gap-2 px-3.5 py-1.5 rounded text-xs font-medium bg-[#161616] hover:bg-[#222222] text-[#E0E0E0] hover:text-[#C5A059] border border-[#262626] hover:border-[#C5A059]/60 transition-all shadow-sm uppercase tracking-wider"
+            className="flex items-center gap-2 px-3.5 py-1.5 rounded text-xs font-medium bg-[#161616] hover:bg-[#222222] text-[#E0E0E0] hover:text-[#5FBF8C] border border-[#262626] hover:border-[#5FBF8C]/60 transition-all shadow-sm uppercase tracking-wider"
             title="Open AI Steward Consultation"
           >
-            <Bot className="w-3.5 h-3.5 text-[#C5A059]" />
+            <Bot className="w-3.5 h-3.5 text-[#5FBF8C]" />
             <span className="hidden md:inline">AI Steward</span>
           </button>
 
